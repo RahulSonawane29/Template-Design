@@ -1,0 +1,486 @@
+body {
+  overflow-x: hidden;
+}
+header .language ul li {
+  padding: 0 5px;
+}
+
+header .language ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+header .language ul {
+  margin-top: 5px;
+}
+
+header .container time {
+  font-size: 0.75rem;
+}
+
+header .font_1 ul li {
+  font-size: 22px;
+  padding: 0 7px;
+  color: gray;
+}
+
+header .font_1 i:hover {
+  cursor: pointer;
+}
+
+header .font_1 ul {
+  margin-top: 5px;
+}
+header .font_1 ul span {
+  padding-left: 10px;
+}
+.container .row .loksata img {
+  width: 340px;
+  height: 72px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+/* ################################################ nav styling ############################################# */
+
+.overlay {
+  height: 80%;
+  width: 0;
+  margin-top: -130px;
+  position: fixed;
+  z-index: 1;
+  top: 175px;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay ul li {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  font-weight: lighter;
+}
+.overlay ul {
+  margin-left: 140px;
+}
+
+.overlay ul li:hover,
+.overlay li:focus {
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+  color: #000;
+}
+.openNav {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  font-size: 60px;
+}
+nav {
+  position: sticky;
+  top: -1px;
+  background-color: #0a112d;
+  color: white;
+  border-bottom: 2px solid #dc0505;
+  margin-top: 10px;
+}
+
+nav ul {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+nav .icon_2 a i {
+  color: white;
+}
+
+nav .icon_2 a .fa-bars {
+  font-size: 24px;
+}
+nav .icon_2 a .fa-search {
+  position: relative;
+  left: 70px;
+}
+
+/* ############################# section styling SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
+.pune_list ul {
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.pune_list ul li {
+  padding: 0 5px;
+}
+
+.pune_list ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* ################################################ main styling ##################################### */
+
+main .row .middle_1 .news_1 p {
+  font-size: 0.8375rem;
+  font-weight: 600;
+}
+
+main .row .middle_1 .news_1 .under_line {
+  border-bottom: 1px dotted gray;
+  padding-bottom: 10px;
+}
+
+main .row .middle_1 .news_1 p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.middle_inside_1 p {
+  font-weight: 600;
+}
+
+main .row .middle_inside_1 img {
+  width: 153px;
+  height: 86px;
+}
+
+main .row .middle_inside_1 {
+  border-bottom: 1px dotted grey;
+  font-size: 15px;
+}
+
+main .row .middle_inside_1 p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.manoranjan {
+  background-color: #0a112d;
+  color: white;
+  margin-top: 10px;
+}
+
+.manoranjan .owl-carousel .item img {
+  width: 260px;
+  height: 140px;
+  cursor: pointer;
+}
+
+.manoranjan .owl-carousel .item p {
+  font-size: 0.8375rem;
+  font-weight: 600;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+/* ###########################################3  ताज्या बातम्या styling    #################################3 */
+
+.news_img .latest p {
+  font-size: 0.8375rem;
+  font-weight: 600;
+}
+
+.news_img .latest p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.news_img .latest img {
+  width: 111px;
+  height: 62px;
+  cursor: pointer;
+}
+
+.button1 button {
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button1 button span {
+  color: #dc0505;
+}
+
+/* #################################### photoes galary #####################################33333 */
+
+section .photo_galary .photo {
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+}
+
+section .photo_galary ul .li {
+  border: 1px solid white;
+  padding: 7px 15px 5px;
+  font-size: 0.7125rem;
+  margin-left: 5px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  font-weight: 600;
+}
+
+section .photo_galary ul .li:hover {
+  background-color: #dc0505;
+  cursor: pointer;
+}
+
+section .galary_img img {
+  width: 240px;
+  height: 135px;
+}
+
+section .galary_img p {
+  font-size: 0.8375rem;
+  font-weight: 600;
+}
+
+section .galary_img p:hover {
+  color: #dc0505;
+}
+
+.button2 button {
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  background-color: #0a112d;
+  color: white;
+}
+
+.button2 button span {
+  color: #dc0505;
+}
+
+/* #################################################3 Actors styling ############################################3 */
+
+.actor p {
+  font-weight: bold;
+  font-size: 0.937rem;
+  padding-top: 10px;
+}
+
+.actor p:hover {
+  color: #dc0505;
+  cursor: pointer;
+}
+
+.actor_2 p {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.actor_2 img {
+  width: 106px;
+  height: 59px;
+}
+
+/* ##############################################3 मल्टीमीडिया styling ####################################3 */
+
+.galary_img .button a {
+  background: #dc0505;
+  padding: 5px 12px;
+  border-radius: 0.9375rem;
+  font-size: 0.625rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.galary_img .button a i {
+  padding-right: 5px;
+}
+
+/* #################################### मुंबईच्या बातम्या ############################################### */
+
+.bakola .row_1 {
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.sachin {
+  font-weight: bold;
+}
+
+.sachin2 img {
+  width: 200px;
+  height: 111px;
+}
+
+.sachin2 p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.sachin p:hover {
+  color: #dc0505;
+}
+
+.bakola .row_1 .team {
+  font-size: 12px;
+  color: #dc0505;
+}
+
+.bakola .row_1 img {
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.bakola .button_1 button {
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.bakola .button_1 button span {
+  color: #dc0505;
+}
+
+/* #########################################3 ट्रेंडिंग styling $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44 */
+
+.actor .jitu .actor_2 {
+  width: 100%;
+}
+
+/* ###################################3 अग्रलेख, अन्वयार्थ, व्यक्तिवेध, विशेष ######################################33*/
+
+.life_style .life img {
+  width: 228px;
+  height: 128px;
+}
+
+.life_style .life .paragraph {
+  border-bottom: 1px dotted grey;
+}
+
+.life_style .life p {
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 0 8px 0;
+}
+/* #########################################33 You May Like #################################################33 */
+
+section .box-1 .box-2 img {
+  width: 310px;
+  height: 260px;
+}
+
+.box-1 p {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+/* ##################################### footer styling ################################################3 */
+
+.text-center ul li {
+  padding-left: 5px;
+  display: inline-flex;
+}
+
+footer .footer_heading h5 {
+  color: #787677;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.footer_list div {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+footer .queck_link {
+  border-left: 1px solid gray;
+}
+
+footer .queck_link ul li {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.follow_us {
+  border-right: 1px solid gray;
+}
+
+.follow_us i {
+  font-size: 30px;
+  padding: 10px 10px 10px 0;
+}
+
+.express ul li {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* ################################ media quary #################### */
+
+@media screen and (max-width: 576px) {
+  header {
+    display: none;
+  }
+  .container .row .loksata img {
+    width: 160px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .openNav {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    font-size: 60px;
+    color: #000;
+  }
+
+  nav {
+    background-color: white;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-top: 10px;
+    display: flex;
+  }
+  nav .row .maha ul li {
+    padding: 10px;
+  }
+  main .row .top-add .add {
+    display: none;
+  }
+  main .row .advertisement img {
+    display: none;
+  }
+  .text-center ul li {
+    padding-left: 10px;
+    display: inline-block;
+  }
+}

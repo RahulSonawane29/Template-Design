@@ -1,0 +1,1322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* == Navbar == */
+
+.navbar {
+  background: #fff;
+  padding: 0;
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.navbar img {
+  float: left;
+  position: relative;
+  margin-top: 20px;
+}
+
+.navbar button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  /* background: rgba(241, 239, 239, 0.534); */
+  background: #fff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/* == Button CSS == */
+
+.dropbtn {
+  color: #666;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+
+.list-unstyled {
+  background: #fff;
+}
+
+.list-unstyled li {
+  background: #fff;
+  list-style: none;
+  color: #666;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: 70px;
+  width: 250px;
+  height: 570px;
+}
+
+.dropdown li {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.23);
+  margin: 10px;
+}
+
+.item {
+  position: absolute;
+  float: right;
+  top: 10px;
+  left: 280px;
+}
+
+/* == Section-1 == */
+
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* == About Cipla == */
+
+.corousel2 {
+  margin-top: 80px;
+  position: relative;
+}
+
+/* == Latest at Cipla == */
+
+h1 {
+  font-size: 36px;
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  font-family: inherit;
+  font-weight: 550;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.carousel-item {
+  background: rgba(250, 175, 63, 1);
+}
+
+.btn-rounded {
+  background: #005aa5
+    url(https://www.cipla.com/themes/cipla/images/read-more-arrow.svg) no-repeat;
+  border-radius: 42px;
+  color: #fff;
+  font-size: 14px;
+  width: 200px;
+  height: 60px;
+  display: block;
+  text-align: left;
+  padding: 17px 25px;
+  text-transform: capitalize;
+  margin-top: 50px;
+  transition: all 0.34s;
+  text-decoration: none;
+  box-shadow: 0 5px 20px -11px #02273b;
+  background-position: 88% center;
+  background-size: 12px;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.btn-rounded:hover {
+  background-color: #0b724e;
+}
+
+.container::before {
+  background: url(/bootstrap-demo/task-webpage/cipla/repeatable-dot.jpg)
+    repeat-x;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  content: "";
+  z-index: -1;
+}
+
+.text1 {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+/* == Therapies At Cipla == */
+
+.container1 {
+  margin-top: 60px;
+}
+
+.therapy {
+  display: inline-flex;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(116, 199, 169, 1) 0,
+    rgba(116, 199, 169, 1) 28%,
+    rgba(49, 163, 220, 1) 100%
+  );
+}
+
+.therapy::after {
+  background: url(/bootstrap-demo/task-webpage/cipla/pattern.png);
+  content: "";
+  width: 100%;
+  height: 18%;
+  position: absolute;
+  bottom: 70px;
+  z-index: 1;
+}
+
+.therapy img {
+  margin-top: 70px;
+  margin-left: 150px;
+  box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+  height: max-content;
+  z-index: 2;
+}
+
+.therapy h2 {
+  font-family: "Poppins", sans-serif;
+  max-width: 150px;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 100px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.therapy p {
+  font-family: "Poppins", sans-serif;
+  max-width: 390px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 280px;
+  margin-left: -150px;
+}
+
+.therapy h6 {
+  font-family: "Poppins", sans-serif;
+  max-width: 150px;
+  font-size: 16px;
+  margin-top: 410px;
+  margin-left: -390px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.therapy .btn-rounded1 {
+  background: #fff
+    url(https://www.cipla.com/themes/cipla/images/down-select.svg) no-repeat;
+  border-radius: 42px;
+  color: #005aa5;
+  font-size: 14px;
+  width: 410px;
+  height: 60px;
+  text-align: left;
+  padding: 20px 25px;
+  text-transform: capitalize;
+  margin-top: 455px;
+  margin-left: -145px;
+  transition: all 0.34s;
+  text-decoration: none;
+  box-shadow: 0 5px 20px -11px #02273b;
+  background-position: 92% center;
+  background-size: 7px;
+  color: #005aa5 !important;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* == Life  at cipla == */
+
+.container2 {
+  margin-top: 60px;
+}
+
+.life {
+  display: flex;
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(116, 199, 169, 1) 0,
+    rgba(116, 199, 169, 1) 28%,
+    rgba(49, 163, 220, 1) 100%
+  );
+}
+
+.life::after {
+  background: url(/bootstrap-demo/task-webpage/cipla/pattern.png);
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.life h2 {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 1170px;
+  margin-left: -1250px;
+  font-weight: 600;
+  padding-top: 60px;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.life .card {
+  padding: 20px 20px;
+  width: 350px;
+  height: 350px;
+  margin-top: 150px;
+  margin-left: 150px;
+  z-index: 2;
+  box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+}
+
+.life .card img {
+  width: 100%;
+  margin-bottom: 30px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.life .card .card-text {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.23);
+}
+
+.life .card1 {
+  background-color: #fff;
+  padding: 20px 20px;
+  width: 350px;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 30px;
+  z-index: 2;
+  box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+}
+
+.card1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.life .card1 img {
+  width: 100%;
+  margin-bottom: 30px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.life .card1 .card-text {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.23);
+}
+
+.life .card2 {
+  background-color: #fff;
+  padding: 20px 20px;
+  width: 350px;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 30px;
+  z-index: 2;
+  box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+}
+
+.card2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.life .card2 img {
+  width: 100%;
+  margin-bottom: 30px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.life .card2 .card-text {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.23);
+}
+
+/* == More Stories Button == */
+
+.morestories {
+  display: flex;
+  justify-content: center;
+}
+
+/* == Investor Center == */
+
+.container3 {
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 100px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.stock-block-bottom p,
+.disclaimer-text {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  line-height: 20px;
+  width: 350px;
+}
+
+.block-stock-block > h2 {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.stock-custom-block h4 {
+  font-weight: 100;
+  font-size: 22px;
+  margin-top: 22px;
+  color: rgb(145, 135, 135);
+}
+
+.stock-custom-block h2 {
+  font-weight: 100;
+  font-size: 44px;
+  color: rgb(77, 71, 71);
+}
+
+.news-latest-content-copy {
+  padding: 15px 0;
+  width: 360px;
+  margin-left: 12px;
+  border-bottom: #999 1px solid;
+}
+
+.news-latest-content-copy a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  padding-bottom: 15px;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.news-latest-content-copy .date {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #9f9f9e;
+  font-weight: 300;
+}
+
+.cus-accordian .panel-body {
+  border: 0 !important;
+  padding: 0 0 20px;
+}
+
+.cus-accordian .panel-default {
+  border: 0;
+  box-shadow: none;
+  border-bottom: #8da6b4 1px solid;
+  border-radius: 0;
+  width: 360px;
+}
+
+.cus-accordian .panel-heading .panel-title a {
+  color: #005392;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.cus-accordian .panel-title a {
+  padding: 20px 15px;
+}
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
+#iv-accordion .panel-default:first-child {
+  border-top: #8da6b4 1px solid;
+}
+
+.iv-accordion-each a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  transition: 0.25s linear;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border: #9f9f9e 1px solid;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+
+.block-investor-resource-acc-block > h2 {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.view-display-id-latest .view-header h2 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* == Employee Stories == */
+
+.employee {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.employee-main {
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.employee-stories img {
+  margin-left: 150px;
+  border-radius: 50%;
+  border: 4px solid#fff;
+  box-shadow: 0 17px 20px -14px rgb(0 0 0 / 75%);
+}
+
+.vertical {
+  display: inline-flex;
+}
+
+.vertical img {
+  width: 200px;
+  margin: 0 -2px;
+  height: 442px;
+}
+
+.horizontal img {
+  position: absolute;
+  display: none;
+}
+
+.vertical .paragraph p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #005392;
+  margin: 0 0 10px;
+  width: 850px;
+}
+
+.paragraph h4 {
+  margin-top: 40px;
+  line-height: 1;
+  /* font-size: calc(1rem + 0.3vw); */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.paragraph span {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.vertical .vertical-employee {
+  margin-top: 50px;
+}
+
+/* == Cipla Foundation == */
+
+.container5 {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(116, 199, 169, 1) 0,
+    rgba(116, 199, 169, 1) 28%,
+    rgba(49, 163, 220, 1) 100%
+  );
+}
+
+.container5::after {
+  background: url(/bootstrap-demo/task-webpage/cipla/pattern.png);
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 5px;
+  z-index: 2;
+}
+
+.row5 {
+  margin-left: 150px;
+  margin-right: 180px;
+}
+
+.foundation1 {
+  margin-top: 90px;
+  z-index: 3;
+  position: relative;
+  background-color: white;
+  padding-top: 150px;
+  padding-left: 110px;
+  padding-right: 120px;
+  padding-bottom: 100px;
+  height: 80vh;
+  text-align: left;
+  display: block;
+  box-shadow: 0 0 20px 2px rgb(8 36 59 / 29%);
+}
+
+.foundation1 h2 {
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 45px;
+}
+
+.foundation1 p {
+  margin-top: 20px;
+  color: #333;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.foundation2 {
+  margin-top: 90px;
+  z-index: 3;
+  position: relative;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-caption {
+  background-color: rgba(49, 163, 220);
+  margin-left: -91px;
+  width: 80%;
+  min-height: 170px;
+  padding: 40px;
+  text-align: left;
+  margin-bottom: -60px;
+  z-index: 2;
+  position: absolute;
+}
+
+/* == Cipla Retweeted == */
+
+.container6 {
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
+.retweeted {
+  display: flex;
+}
+
+.tweeter {
+  display: flex;
+  width: 50px;
+  align-items: center;
+}
+
+.tweeter p {
+  margin-left: 15px;
+  color: #005392;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.card6 {
+  padding: 20px;
+  box-shadow: 0 3px 40px 7px rgb(0 0 0 / 10%);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  width: 600px;
+}
+
+.card-text6 {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.card-footer {
+  color: #9f9f9e;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.card-footer img {
+  width: 20px;
+  height: auto;
+}
+
+.card-footer p {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.card-footer span {
+  margin-left: 325px;
+  color: #005392;
+}
+
+.card7 {
+  padding: 20px;
+  box-shadow: 0 3px 40px 7px rgb(0 0 0 / 10%);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  width: 600px;
+}
+
+.card8 {
+  padding: 20px;
+  box-shadow: 0 3px 40px 7px rgb(0 0 0 / 10%);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.card9 {
+  padding: 20px;
+  box-shadow: 0 3px 40px 7px rgb(0 0 0 / 10%);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.tweeter8 {
+  display: flex;
+  width: 50px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.tweeter8 p {
+  margin-left: 15px;
+  color: #005392;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.tweeter9 {
+  display: flex;
+  width: 50px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.tweeter9 p {
+  margin-left: 15px;
+  color: #005392;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* == Footer == */
+
+.container7 {
+  display: flex;
+  height: 115vh;
+  background-color: #005392;
+  padding-left: 120px;
+  padding-right: 150px;
+  padding-top: 80px;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer li:hover {
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  width: 250px;
+}
+
+footer ul label {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer ul label:hover {
+  color: #fff;
+}
+
+footer ul .labels {
+  padding-top: 25px;
+}
+
+.footer2 {
+  margin-top: 50px;
+  margin-left: -580px;
+}
+
+.footer2 span {
+  display: inline-flex;
+}
+
+.copy {
+  margin-right: 100px;
+}
+
+.copy:hover {
+  color: #fff;
+}
+
+.fab {
+  margin-right: 20px;
+}
+
+.fab:hover {
+  color: #fff;
+}
+
+/* == Footer2 == */
+
+footer1 {
+  display: none;
+}
+
+/* ************************* == Mobile Screen == ************************************* */
+
+/* == Mobile Screen == */
+
+@media only screen and (max-width: 854px) {
+  /* == Navbar == */
+
+  .navbar {
+    z-index: 5;
+    position: fixed;
+  }
+
+  .navbar img {
+    float: left;
+    position: relative;
+    height: 25px;
+    margin-top: 30px;
+  }
+
+  .navbar button {
+    top: 50px;
+    margin-left: -100px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  /* == Latest at Cipla == */
+
+  h1 {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .text1 {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0;
+  }
+
+  .text1 .Heading {
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  .text1 p {
+    font-size: 12px;
+  }
+
+  .btn-rounded {
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+  }
+
+  /* == Therapies At Cipla == */
+
+  .container1 {
+    position: relative;
+  }
+
+  .therapy {
+    position: relative;
+    height: 90vh;
+    width: 300px;
+  }
+
+  .therapy::after {
+    display: none;
+  }
+
+  .therapy img {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  /* == Life  at Cipla == */
+
+  .life {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 700px;
+    margin-top: 0px;
+  }
+
+  .life h2 {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 8px;
+  }
+
+  .life .card {
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 25px;
+    box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+  }
+
+  .life .card1 {
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 25px;
+    box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+  }
+
+  .life .card2 {
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 25px;
+    box-shadow: 2px 3px 20px -7px rgb(0 0 0 / 75%);
+  }
+
+  /* == More Stories Button == */
+
+  .morestories {
+    margin-top: 950px;
+  }
+
+  /* == Investor Center == */
+
+  .container3 {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 100px;
+  }
+
+  .news-latest-content-copy {
+    width: 500px;
+  }
+
+  .cus-accordian .panel-default {
+    width: 500px;
+  }
+
+  .view-display-id-latest .view-header h2 {
+    margin-top: 80px;
+  }
+
+  .block-stock-block h2 {
+    font-size: 28px;
+  }
+
+  .block-stock-block > h2 {
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .block-investor-resource-acc-block > h2 {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .cus-accordian .panel-title a {
+    padding: 20px 2px;
+  }
+
+  /* == Employee Stories == */
+
+  .employee {
+    margin-left: 5px;
+  }
+
+  .employee-main {
+    display: inline-block;
+  }
+
+  .employee-stories img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-left: 0;
+  }
+
+  .vertical {
+    margin-top: 50px;
+  }
+
+  .vertical img {
+    display: none;
+  }
+
+  .horizontal img {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: -225px;
+    display: flex;
+  }
+
+  .vertical .paragraph p {
+    font-size: 18px;
+    margin: 10px;
+    width: 470px;
+  }
+
+  .paragraph h4 {
+    margin-top: -385px;
+    margin-left: 100px;
+    font-weight: 100;
+  }
+
+  .paragraph span {
+    margin-left: 100px;
+  }
+
+  .vertical .vertical-employee {
+    margin-top: 400px;
+  }
+
+  .vertical .vertical-employee img {
+    display: inline-flex;
+  }
+
+  /* == Cipla Foundation == */
+
+  .container5 {
+    display: flex;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .container5::after {
+    background: url(/Bootstrap-demo/Images/Cipla/pattern.png);
+    content: "";
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 5px;
+    z-index: 2;
+  }
+
+  .row5 {
+    margin-left: 0;
+  }
+
+  .foundation1 {
+    margin-top: 0px;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    height: 250px;
+    text-align: left;
+    display: block;
+    width: 500px;
+    box-shadow: 0 0 20px 2px rgb(8 36 59 / 29%);
+  }
+
+  .foundation1 h2 {
+    font-size: 28px;
+  }
+
+  .foundation1 p {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .foundation2 {
+    margin-top: 0px;
+  }
+
+  .carousel-caption {
+    margin-left: -65px;
+    width: 490px;
+    padding: 50px;
+    text-align: left;
+    margin-bottom: -190px;
+    z-index: 3;
+    position: absolute;
+  }
+
+  /* == Cipla Retweeted == */
+
+  .container6 {
+    margin-top: 430px;
+    margin-left: 15px;
+  }
+
+  .retweeted {
+    display: block;
+  }
+
+  .tweeter8 {
+    margin-left: 0;
+  }
+
+  .tweeter8 p {
+    margin-left: 0;
+  }
+
+  .tweeter9 {
+    margin-left: 0;
+  }
+
+  .tweeter9 p {
+    margin-left: 0;
+  }
+
+  .card6 {
+    width: 480px;
+  }
+
+  .card7 {
+    width: 480px;
+  }
+
+  .card8 {
+    width: 480px;
+    margin-left: 0;
+  }
+
+  .card9 {
+    width: 480px;
+    margin-left: 0;
+  }
+
+  .card-footer span {
+    margin-left: 205px;
+  }
+
+  /* == Footer == */
+
+  .container7 {
+    display: none;
+  }
+
+  /* == Footer2 == */
+
+  .container-last {
+    width: 100%;
+    height: 70vh;
+    background-color: #005392;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  footer1 {
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .btn7 {
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 80px;
+    height: 60px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  footer1 .icon {
+    margin-left: 80px;
+  }
+
+  footer1 .fab {
+    margin-top: 120px;
+    margin-left: 30px;
+  }
+
+  footer1 .fab:hover {
+    color: #fff;
+  }
+
+  footer1 h4 {
+    margin-left: 120px;
+  }
+
+  footer1 h5 {
+    margin-top: 15px;
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+
+  footer1 h5:hover {
+    color: #fff;
+  }
+
+  footer1 label {
+    margin-left: 20px;
+  }
+
+  footer1 .par {
+    margin-left: 80px;
+  }
+
+  footer1 label:hover {
+    color: #fff;
+  }
+}
+
+/* == End == */

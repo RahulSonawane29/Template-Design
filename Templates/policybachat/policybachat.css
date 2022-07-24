@@ -1,0 +1,237 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  /* margin: 0; */
+}
+.navbar-expand-lg {
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+}
+/*.navbar-collapse {
+  height: 30px; 
+}*/
+.navbar-expand-lg .navbar-collapse {
+  border-top: 1px solid #e7e7e7;
+  width: 100%;
+}
+.navbar {
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+.navbar-brand img {
+  width: 40%;
+}
+.navbar-nav {
+  float: right;
+}
+.navbar-toggler {
+  border: none;
+  /* width: 10px; */
+}
+/* float use for text position left or right / below the navbar */
+.navbar-text a {
+  text-decoration: none;
+}
+
+.navbar-text a strong {
+  color: #009688;
+  font-weight: 700;
+  text-decoration: none;
+}
+.collapse {
+  padding-top: 0px;
+}
+.text-right {
+  text-align: right;
+}
+.intro.car {
+  background-image: url("template/policybachat/images/car-insurance.png");
+  background-color: #9f82ef;
+}
+.intro {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 30px 0 100px 0;
+  background-size: contain;
+}
+* {
+  box-sizing: border-box;
+}
+.intro h1 {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0px;
+  font-size: 30px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.intro .text {
+  color: #fff;
+  font-size: 16px;
+}
+.row {
+  margin-right: 55px;
+  margin-left: 55px;
+}
+.text-center {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.insurance-companies {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.insurance-companies .col-sm-3 {
+  padding: 2px;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  background-color: #fff;
+}
+.nav-taps {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.nav-taps > li > a:hover {
+  width: 100%;
+  background-color: #e0e6eb;
+  border-bottom: 2px solid #3da291;
+}
+.nav-link {
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 8px;
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  font-weight: bold;
+  color: #333;
+}
+.item {
+  text-align: center;
+  color: #5f2ee5;
+  margin: 0 0 -5px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.section {
+  margin-top: 50px;
+}
+.text-left {
+  font-weight: 5;
+  font-size: 15px;
+}
+.carousel-control {
+  position: absolute;
+  opacity: 0.1;
+}
+.glyphicon-chevron-left {
+  color: #adc4c4;
+}
+.glyphicon-chevron-right {
+  color: #afc4c4;
+}
+em {
+  font-weight: 11;
+  font-size: 15px;
+  color: #333;
+}
+.col-sm-6 h3 a:hover {
+  color: #009688;
+  text-decoration: none;
+}
+.panel {
+  display: inline-block;
+  min-height: 250px;
+  border: 1px solid transparent;
+}
+.panel-body h4 {
+  color: #333;
+  font-weight: bold;
+}
+.form-container {
+  width: 400px;
+  height: 420px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 0px rgb(71, 69, 69);
+}
+.form-select {
+  height: 34px;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  color: #5f2ee5;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background: rgb(238, 232, 232);
+  color: #176e66;
+  border-bottom: 2px solid #0d7469;
+}
+.sc-block a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.sc-block a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.footer {
+  color: #757575;
+  padding: 30px 0 20px;
+}
+.footer a {
+  color: #757575;
+}
+.footer a:hover {
+  color: #009688;
+  text-decoration: none;
+}
+.list-icon li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.list-icon li .glyphicon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 0px solid #eee;
+}

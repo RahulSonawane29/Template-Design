@@ -1,0 +1,269 @@
+section .request input {
+  border-bottom: 2px solid gray !important;
+}
+
+section .large {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+section .request .width {
+  width: 300px;
+  height: 50px;
+  background: #9999;
+  color: white;
+}
+
+/* ############################################## car video styling ################################### */
+
+section .heighlight {
+  color: white;
+}
+
+section .video {
+  height: 450px;
+}
+
+section .video iframe {
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 95%;
+  height: 100%;
+}
+
+.review h5 {
+  color: #98040d;
+  border-bottom: 4px solid #98040d;
+  width: 80px;
+}
+
+.review hr {
+  margin-top: -6px;
+}
+
+/* ############################################## all images styling ########################### */
+
+.feature-container {
+  display: flex;
+  background-color: #1d1d1d;
+}
+.feature-container h2 {
+  font-family: "PT Sans", sans-serif;
+  color: #98040d;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.feature-container h3 {
+  color: #98040d;
+}
+.feature-container p {
+  color: #fff;
+}
+.content {
+  padding: 0 50px;
+  width: 35%;
+}
+.image {
+  width: 65%;
+}
+.image img {
+  width: 100%;
+}
+
+/* ################################# footer styling ################## */
+
+.price {
+  display: flex;
+  background-color: #2d2d2b;
+  justify-content: space-around;
+}
+
+.price h3 {
+  font-family: arial;
+  color: #98040d;
+}
+
+.price .h2 {
+  font-size: 20px;
+}
+
+section .row .pointer h5,
+h6,
+a {
+  cursor: pointer;
+}
+
+footer .row .pointer a i {
+  font-size: 25px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+/* ################################## manual, atomatic ##################################### */
+
+section .container ul .manual {
+  color: #98040d;
+  font-size: 20px;
+  border-bottom: 4px solid brown;
+  cursor: pointer;
+}
+
+section .container ul .automatic {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+section .container ul,
+.row {
+  border-bottom: 1px solid black;
+}
+
+section .container .row .harrier,
+.rs {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+section .container .row .best-offer {
+  color: #98040d;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* ################################# color varient ###########################################3 */
+section .varient {
+  border-bottom: 1px solid white;
+  color: white;
+  background: black;
+}
+
+section .varient h3 {
+  margin-left: 140px;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.container .pointer h5:hover {
+  color: white;
+}
+
+.img-width {
+  background: black;
+}
+
+.img-width img {
+  width: 300px;
+  height: 196px;
+  cursor: pointer;
+}
+
+section .icon i {
+  color: white;
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+section .row .pointer a {
+  padding: 10px;
+}
+
+section .row .pointer .facebook {
+  padding-left: 125px;
+}
+
+/* ################################### .request a callback 2 ################################# */
+
+.item .and .car_bikes img {
+  width: 150px;
+  height: 120px;
+}
+.item .and .car_bikes {
+  display: flex;
+}
+
+.item .and .car_bikes p {
+  padding-left: 10px;
+}
+
+.item .easy {
+  color: #98040d;
+}
+.item .easy:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.item .and .car_bikes p span {
+  color: #98040d;
+}
+
+.item .and .car_bikes p span:hover {
+  text-decoration: underline;
+}
+
+/* ########################################## footer styling ######################################## */
+
+footer {
+  position: sticky;
+  bottom: 0;
+}
+
+footer .row .btn {
+  width: 400px;
+  height: 50px;
+  background: #202020;
+  color: white;
+  border: 1px solid white;
+}
+
+footer .row .btn:hover {
+  background: #98040d;
+  border: none;
+  font-size: 20px;
+}
+
+/* ################################ media quary #################### */
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav .nav-list {
+    /* margin: 15px 5px; */
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 550px;
+  }
+  .feature-container {
+    flex-wrap: wrap;
+    /* display: block; */
+  }
+
+  .image {
+    width: 100vw;
+    order: 0;
+  }
+
+  .content {
+    width: 100vw;
+    order: 1;
+  }
+
+  .feature-container h2 {
+    font-size: 32px;
+  }
+  footer .row {
+    display: none;
+    width: 400px;
+    height: 50px;
+    background: #202020;
+    color: white;
+    border: 1px solid white;
+  }
+}

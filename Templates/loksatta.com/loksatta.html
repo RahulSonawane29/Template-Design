@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loksatta Marathi-News,Latest-News</title>
+    <link rel="stylesheet" href="loksatta.css" />
+    <link
+      rel="icon"
+      href="https://www.loksatta.com/wp-content/uploads/2021/09/cropped-ls-feviicon-1.png?w=192"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Top Header start  -->
+    <header>
+      <div class="container-fluid top-header">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-2 d-flex justify-content-center">
+            <p id="dateText"></p>
+          </div>
+          <div class="col-12 col-md-8 lang">
+            <ul class="news-lang">
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">English</strong></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">தமிழ்</strong></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">বাংলা</strong></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">മലയാളം</strong></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">हिंदी</strong></a
+                >
+              </li>
+              <li>
+                <a href="#" style="color: red; font-weight: 500"
+                  ><strong class="screen-reader-text">मराठी</strong></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">Business</strong></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><strong class="screen-reader-text">बिज़नेस</strong></a
+                >
+              </li>
+              <li>
+                <a href="#" style="border: none"
+                  ><strong class="screen-reader-text">Insurance</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 d-flex justify-content-center">
+            <span
+              ><img
+                src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/facebook-icon.svg"
+                alt=""
+            /></span>
+            <span
+              ><img
+                src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/twitter-icon.svg"
+                alt=""
+            /></span>
+          </div>
+        </div>
+
+        <!-- loksatta name start  -->
+
+        <div class="row">
+          <div class="col-12 col-md-4 justify-content-center"></div>
+          <div class="col-12 col-md-4">
+            <div class="loksatta">
+              <img
+                src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/logo/loksatta.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4 justify-content-center"></div>
+        </div>
+      </div>
+      <!-- loksatta name End  -->
+
+      <!--=============================== nav styling ===================================-->
+
+      <nav style="position: sticky; top: 0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-1 icon_2 pt-2">
+              <div id="myNav" class="overlay">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <div class="overlay-content">
+                  <footer style="display: flex">
+                    <ul>
+                      <li>होम</li>
+                      <li>ई-पेपर</li>
+                      <li>महाराष्ट्र</li>
+                      <li>शहर</li>
+                      <li>मुंबई</li>
+                      <li>पुणे</li>
+                      <li>ठाणे</li>
+                      <li>नवी मुंबई</li>
+                      <li>वसई</li>
+                      <li>विरार</li>
+                      <li>पालघर</li>
+                      <li>नाशिक</li>
+                      <li>नागपूर</li>
+                      <li>औरंगाबाद</li>
+                    </ul>
+
+                    <ul>
+                      <li>कोल्हापूर</li>
+                      <li>देश-विदेश</li>
+                      <li>करोना</li>
+                      <li>अपडेट्स</li>
+                      <li>निवडणूक २०२२</li>
+                      <li>मनोरंजन</li>
+                      <li>क्रीडा</li>
+                      <li>ट्वेन्टी-२० विश्वचषक</li>
+                      <li>राशिभविष्य</li>
+                      <li>ऑटो तंत्रज्ञान</li>
+                      <li>संपादकीय</li>
+                    </ul>
+
+                    <ul>
+                      <li>अन्वयार्थ</li>
+                      <li>व्यक्तिवेध</li>
+                      <li>पहिली बाजू</li>
+                      <li>लाल किल्ला</li>
+                      <li>उलटा चष्मा</li>
+                      <li>समोरच्या बाकावरून</li>
+                      <li>बुकमार्क</li>
+                      <li>अन्यथा</li>
+                      <li>चतु:सूत्र</li>
+                      <li>स्वरावकाश</li>
+                      <li>अद्वयबोध</li>
+                      <li>विशेष</li>
+                      <li>लेख</li>
+                      <li>लोकमानस</li>
+                      <li>लोकसत्ता</li>
+                      <li>विश्लेषण</li>
+                    </ul>
+                    <ul>
+                      <li>लाइफस्टाइल</li>
+                      <li>ट्रेंडिंग</li>
+                      <li>फोटो</li>
+                      <li>व्हिडिओ</li>
+                      <li>वेब</li>
+                      <li>स्टोरीज</li>
+                      <li>अर्थसत्ता</li>
+                      <li>लेख</li>
+                      <li>चतुरंग</li>
+                      <li>लोकरंग</li>
+                      <li>बालमैफल</li>
+                      <li>व्हिवा</li>
+                      <li>वास्तुरंग</li>
+                    </ul>
+                  </footer>
+                </div>
+              </div>
+              <span
+                class="openNav"
+                style="font-size: 25px; cursor: pointer"
+                onclick="openNav()"
+                >&#9776;</span
+              >
+              <!-- <a href=""><i class="fas fa-bars"></i></a> -->
+            </div>
+
+            <div class="col-12 col-md-10">
+              <ul
+                class="list-unstyled d-flex"
+                style="
+                  justify-content: space-evenly;
+                  padding-top: 12px;
+                  cursor: pointer;
+                "
+              >
+                <li><i class="fas fa-home" style="font-size: 15px"></i></li>
+                <li>महाराष्ट्र</li>
+                <li>शहर</li>
+                <li>देश-विदेश</li>
+                <li>मनोरंजन</li>
+                <li>क्रीडा</li>
+                <li>संपादकीय</li>
+                <li>राशीभविष्य</li>
+                <li>लाइफस्टाइल</li>
+                <li>ट्रेंडिंग</li>
+                <li>लेख</li>
+                <li>फोटो</li>
+                <li>व्हिडिओ</li>
+                <li>FYI</li>
+                <li>समजून घ्या</li>
+                <li>अन्य</li>
+                <li>ब्लॉग्स</li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-1 icon_2 pt-2">
+              <a href=""><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ##################################### section styling ################################################# -->
+
+      <section style="background-color: white">
+        <div class="pune_list">
+          <ul class="list-unstyled d-flex">
+            <li style="color: red; font-weight: 600">ट्रेंडिंग</li>
+            <li>गोष्ट पुण्याची</li>
+            <li>गोष्ट मुंबईची</li>
+            <li>मुंबई</li>
+            <li>पुणे</li>
+            <li>ठाणे</li>
+            <li>कोरोना वायरस</li>
+            <li>गोवा विधानसभा निवडणूक 2022</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <!-- Top Header End  -->
+
+    <!-- ######################################## main styling ############################################# -->
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 advertisement ps-5">
+          <img
+            src="https://s0.2mdn.net/8622906/NASCAR_Daytona_500_Daytona_International_Speedway_Display_Banner_Tomorrow_static_160x600.jpg"
+            style="position: fixed"
+            alt=""
+          />
+        </div>
+
+        <div class="col-sm-8">
+          <img
+            src="https://s0.2mdn.net/8622906/NASCAR_Daytona_500_Daytona_International_Speedway_Display_Banner_Today_static_728x90.jpg"
+          />
+
+          <div class="row middle_1 py-3">
+            <div class="col-sm-5">
+              <div class="title-img position-relative">
+                <a href="#">
+                  <img
+                    class="w-100"
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/lata-mangesk.jpg"
+                    alt=""
+                  />
+                  <span class="overlay"></span>
+                </a>
+                <span
+                  class="position-absolute start-0 fs-4 fw-bold"
+                  style="
+                    left: 40px !important;
+                    bottom: 10px !important;
+                    color: rgb(34, 33, 33);
+                  "
+                  >Lata Mangeshkar : भारताचा, भेदांपलीकडला सूर..</span
+                >
+              </div>
+
+              <!-- <img
+            src="img/WhatsApp-Image-2021-10-05-at-3.59.27-PM-1.jpeg"
+            style="
+              width: 410px;
+              height: 235px;
+              border-bottom: 1px dotted gray;
+              padding: 10px;
+            "
+            alt=""
+          /> -->
+
+              <div class="row middle_inside_1">
+                <div class="col-sm-7 py-3">
+                  <p>
+                    शाहरुख खान लतादीदींचं अत्यंदर्शन घेताना थुंकला की…; जाणून
+                    Viral Photos मागील सत्य
+                  </p>
+                </div>
+                <div class="col-sm-4 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Shah-Rukh-Khan-lata-mangeshkar-funeral.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row middle_inside_1">
+                <div class="col-sm-7 py-3">
+                  <p>
+                    सुप्रिया सुळेंनी खाली बसून वडिलांना घातले बूट; लतादीदींच्या
+                    अंत्यदर्शनावेळचा ‘तो’ फोटो व्हायरल
+                  </p>
+                </div>
+                <div class="col-sm-4 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Sharad-Pawar-Supriya-Sule.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row middle_inside_1">
+                <div class="col-sm-7 py-3">
+                  <p>
+                    लता मंगेशकर यांच्या निधनानंतर आनंद महिद्रांचं ट्विट चर्चेत;
+                    म्हणाले, “करोना मी तुझा तिरस्कार करतो, जाता जाता…”
+                  </p>
+                </div>
+                <div class="col-sm-4 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Anand-Mahindra-Lata-Mangeshkar.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 news_1">
+              <p class="under_line">
+                Nobel Prize 2021: मनाबे, हॅसलमन आणि पॅरिसी यांना
+                भौतिकशास्त्रातील नोबेल पुरस्‍कार
+              </p>
+              <p class="under_line">
+                Coronavirus : राज्यभरात दिवसभरात २ हजार ८४० रूग्ण करोनामुक्त ;
+                रिकव्हरी रेट ९७.३२ टक्के
+              </p>
+              <p>
+                पंढरपूर : विठुरायाच्या भक्तांसाठी आनंद वार्ता! ; दररोज १० हजार
+                भाविकांना घेता येणार मुखदर्शन
+              </p>
+              <p>
+                मोठी बातमी! धोनीसह इंग्लंड क्रिकेटला जबर धक्का; ‘स्टार’ खेळाडू
+                IPLला मुकणारच, सोबतच…
+              </p>
+              <p>
+                डोंबिवलीत खबळजनक घटना ; रिक्षामधून ओढून बेदम मारहाण करत एकाचा
+                गळा कापला!
+              </p>
+              <p>अवकाशात होणार चित्रपटाचे शुटिंग….</p>
+              <p>
+                World Championship : नेमबाज ऐश्वर्य तोमरने विश्वविक्रम करत
+                पटकावले सुवर्णपदक
+              </p>
+              <p>
+                ओल्या अंडरवेअरच्या सहाय्याने हत्येच्या गुन्हेचा उलगडा, आरोपीला
+                बेड्या; पुणे पोलिसांची जबरदस्त कारवाई
+              </p>
+            </div>
+
+            <div class="col-sm-3">
+              <img
+                src="https://s0.2mdn.net/simgad/2269144016972335410"
+                alt=""
+              />
+              <!-- <div
+            class="container manoranjan"
+            style="width: 300px; border: 1px solid black"
+          >
+            <h4 class="py-2">मनोरंजन</h4>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="img/carosal img/bharti.webp" alt="" />
+                <p>
+                  “पती हर्ष लिंबाचियानं तुझा प्रसिद्धीसाठी वापर केला”
+                  म्हणणाऱ्या ट्रोलर्सना कॉमेडियन भारती सिंहचं सडेतोड उत्तर,
+                  म्हणाली…
+                </p>
+              </div>
+
+              <div class="item">
+                <img src="img/carosal img/jay-bhanushali-1.jpg" alt="" />
+                <p>
+                  BB१५ : जय भानुशाली आहे शोचा सर्वाधिक फी घेणारा स्पर्धक,
+                  रक्कम ऐकून तुम्हीही व्हाल थक्क
+                </p>
+              </div>
+
+              <div class="item">
+                <img
+                  src="img/carosal img/shamita-sheety-karan-kundra.jpeg"
+                  alt=""
+                />
+                <p>
+                  Bigg Boss Marathi 3: “तो फक्त बोलबच्चन आणि…,” विकास
+                  पाटीलने उत्कर्ष शिंदेवर साधला निशाना
+                </p>
+              </div>
+
+              <div class="item">
+                <img
+                  src="img/carosal img/vikram-bhatt-shwetambari-soni-1.jpeg"
+                  alt=""
+                />
+                <p>
+                  लग्न होऊ एक वर्ष सुद्धा झालं? दिग्दर्शक विक्रम भट्ट
+                  यांच्या दुसऱ्या लग्नाची बातमी आली समोर
+                </p>
+              </div>
+
+              <div class="item">
+                <img
+                  src="img/carosal img/bigg-boss-marathi-3-vikas-patil-utkarsh-shinde.webp"
+                  alt=""
+                />
+                <p>
+                  BB 15 : “शमिता आंटी मग सलमान कोण?,” शमिताला ‘आंटी’
+                  बोलल्यामुळे करण कुंद्रा झाला ट्रोल
+                </p>
+              </div>
+            </div>
+          </div> -->
+            </div>
+          </div>
+
+          <!-- ################################ ताज्या बातम्या styling ################################################## -->
+
+          <div class="row news_img mt-3">
+            <h4 style="font-weight: bold"><span>ताज्या बातम्या</span></h4>
+
+            <div class="col-sm-4">
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>पुणे, नाशिकहून मुंबईत रोज प्रवास करणाऱ्यांना पास हवा</p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/tajya batmya img/local-train-1-1.webp" alt="" />
+                </div>
+              </div>
+
+              <div class="row latest pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    “आर्यन खान प्रकरणात शेरलॉक होम्सच्या कथेप्रमाणे वळणं येत
+                    आहेत”, एनसीबीची न्यायालयात माहिती
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="img/tajya batmya img/aryan-khan-ncb-1.jpg    "
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest py-1">
+                <div class="col-sm-7">
+                  <p>नवरात्रीत उपवास करताय? तर मग या गोष्टी लक्षात ठेवा</p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="img/tajya batmya img/navratri-fasting-essential-tips.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="row latest pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    Navratri 2021 Messages: डिजिटल माध्यमातून Greetings, Wishes,
+                    Quotes मधून द्या शुभेच्छा
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="img/tajya batmya img/Navratri-2021-Messages.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest">
+                <div class="col-sm-7">
+                  <p>
+                    राज्यातील जनतेनं भाजपाला चोख प्रत्युत्तर दिलं – अशोक चव्हाण
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/tajya batmya img/Ashok-chavan-1-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="row latest pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    पाव शतकाच्या पाठपुराव्यानंतर सिंधुदुर्गात विमानतळाचे स्वप्न
+                    साकार
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/tajya batmya img/amit-deshmukh.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>भाजपने लक्ष्य केलेल्या आमदाराला पवारांचे बळ</p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/tajya batmya img/k-3-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>
+                    ‘पु.ल.देशपांडे कला अकादमीचा कायापालट करण्यासाठी खासगी
+                    सल्लागार’
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/tajya batmya img/amit-deshmukh.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>सांगोल्याचा बालेकिल्ला राखण्याचे शेकापपुढे आव्हान</p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/tajya batmya img/k-4-2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="button1">
+              <button>आणखी वाचा<span>&#129106;</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 advertisement">
+          <img src="img/GIF-160x600_DV360.gif" style="position: fixed" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <!-- javascript section -->
+
+    <script>
+      document.getElementById("dateText").textContent =
+        new Date().toLocaleDateString();
+
+      document.querySelector(".footer-text").textContent =
+        "All rights reserved @ " + new Date().getFullYear();
+
+      // new
+
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>

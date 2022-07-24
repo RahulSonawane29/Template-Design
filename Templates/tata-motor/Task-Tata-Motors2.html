@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TataMotors.css">
+    <link rel="icon" href="https://cars.tatamotors.com/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="/bootstrap-demo/assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-5.1.3/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap-demo/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/bootstrap-demo/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    
+    <title>TataMoters</title>
+    <style>
+       body{
+           background: black;
+       }
+        .head{
+            background-color: #0b0b0b;
+        }
+
+        .head h6{
+            color: white;
+            cursor: pointer;
+        }
+
+        .head h6:hover{
+            color: rgb(32, 116, 226);
+        }
+
+        nav .nav-list li{
+            margin: 15px 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        nav .nav-list .li-first{
+            color: brown;
+            border-bottom: 4px solid brown;
+            padding: 4px;
+        }
+
+        nav .nav-list .li-second{
+            padding: 5px 20px 5px 20px;
+            background: url(https://cars.tatamotors.com/images/harrier/camo/btn-camo-bg.gif);
+            color: white;
+        }
+
+        nav .nav-list li:hover{
+            border-bottom: 4px solid brown;
+            color: brown;
+        }
+
+          .slider-item img{
+            height: 100%;
+            width: 100%;
+        } 
+
+        section .carousel{
+            margin-top: -15px;
+           
+        }
+
+
+        section .star li{
+            color: orange;
+        }
+
+        section .change input {
+            color: brown;
+            border: none;
+            border-bottom: 2px solid brown;
+        }
+
+        section .change ::placeholder{
+            color: brown;
+        }
+
+        section .change span{
+            color: brown;
+            padding-left:10px ;
+        }
+
+        section .change span:hover{
+            text-decoration: underline;
+        }
+
+        section .box {
+            background: black;
+            padding-left: 20px;  
+        }
+
+        section .box h6{
+            border: 2px solid white;
+            color: white;
+            width: 300px;
+            position: relative;
+            left: 170px;
+        }
+
+        section .box h6:hover{
+            background: brown;
+            border: none;
+        }
+
+        section .request input{
+            background: #1d1d1d;
+            border: none;
+        }
+
+        section .row .pointer .and:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- ##########################################3 header styling ######################################## -->
+
+    <header class="head">
+        <div class="row py-3">
+
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://cars.tatamotors.com/images/tata-motors-logo.png">
+                </div>
+    
+                <div class="col-sm-1">
+                    <h6>Brands <i class="fas fa-chevron-down"></i> </h6> 
+                </div>
+    
+                <div class="col-sm-1">
+                    <h6>About <i class="fas fa-chevron-down"></i>  </h6>
+                     
+                </div>
+    
+                <div class="col-sm-1">
+                    <h6>Owners  <i class="fas fa-chevron-down"></i></h6>
+                   
+                </div>
+    
+                <div class="col-sm-2">
+                    <h6>Shopping <i class="fas fa-chevron-down"></i> </h6>
+                     
+                </div>
+    
+                <div class="col-sm-2">
+                    <img src="https://cars.tatamotors.com/images/tata-logo.png" alt="">
+                </div>      
+        </div>
+    </header>
+
+    <!-- ####################################### navbar styling ########################################## -->
+
+    <nav  style="    background: #e7e7e7; position: sticky; top: 0; z-index: 9999;">
+        <div class="container">
+            <div>
+                <ul class=" d-flex justify-content-center  list-unstyled nav-list">
+                    <li class="li-first">OVERVIEW</li>
+                    <li class="li-second">DARK</li>
+                    <li>CAMO</li>
+                    <li>FEATURES</li>
+                    <li>SPECIFICATIONS</li>
+                    <li>VARIANTS</li>
+                    <li>360 & COLOURS</li>
+                    <li>PRICE</li>
+                    <li>GALLERY</li>
+                    <li>DOWNLOADS</li>
+                    <li>GTESTIMONIALS</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ############################## owl-carousal ########################################### -->
+
+    <section>
+        <div class="row carousel">
+            <div class="col ">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner slider-item ">
+                      <div class="carousel-item active">
+                        <img src="https://cars.tatamotors.com/images/harrier/harrier-xta-plus-desktop-banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+
+                      <div class="carousel-item slider-item">
+                        <img src="https://cars.tatamotors.com/images/dark/harrier/harrier-dark-new-02.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+
+                      <div class="carousel-item slider-item">
+                        <img src="https://cars.tatamotors.com/images/harrier/harrier-jl-2021-desktop-banner.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ######################################### paragraph style ################################# -->
+
+    <section style="background: #1d1d1d;">
+        <div class="container">
+            <div class="row para py-5 ps-5" style="background: #1d1d1d; color: white; line-height: 20px;">
+                <p>
+                    Born of legendary Land Rover pedigree, the All New-Harrier is now available with an advanced 6 Speed Automatic Transmission, packed with a host of exciting features and advanced enhancements.
+              </p>     
+           </div>
+        </div>
+    </section>
+
+    <!-- ################################# middle styling ######################################### -->
+
+    <section style="background: black">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 pt-4 ps-5 bg-black light change " style="color: white;">
+                    <h3>TATA HARRIER</h3>
+                    <ul class="list-unstyled d-flex star">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <small>( 4.7 Based on User Reviews * )</small>
+                    </ul>
+                    
+                    <h5>₹14.39 - 21.09 Lakh*</h5>
+                    <h6>*Ex Showroom price in   <input class="bg-black" type="name" placeholder="New Delhi"><span>change</span></h6>  
+                </div>
+
+                <div class="col-sm-6 py-4 text-center box">
+                    <div class=" mt-4">
+                        <h6 class="py-3">Get Best Offer</h6>    
+                    </div>
+
+                    <div class=" mt-4">
+                        <h6 class="py-3">Book a Test Drive</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ###################################### Request call back #########################33  -->
+
+    <section class="" style="background: #1d1d1d ;padding: 35px 0; border-top: 5px solid #0b0b0b; color: white;">
+        <div class="container ps-5">
+
+            <h3>Request a Call back</h3>
+
+            <div class="row my-4 request">
+                <div class="col-sm-3 ">
+                    <input class="" type="Name" placeholder="Name*">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="" type="email" placeholder="Email*">
+
+                </div>
+                <div class="col-sm-3">
+                    <input class="" type="text" placeholder="Mobile Number*">
+
+                </div>
+                <div class="col-sm-3">
+                    <button class="width">Submit</button>
+                </div>
+            </div>
+
+            <div class="ps-2">
+                <p><i style="font-size: 20px; color: red; cursor: pointer;  padding: 5px;" class="far fa-check-square"></i> I agree to the <span style="color: brown;">Terms and Conditions</span>  &  <span style="color: brown;"I agree to the <span style="color: brown;">Terms and Conditions</span>  &  <span style="color: brown;">Privacy policy </span> by Tata Motors.</p>
+            </div>
+            
+            <div class="ps-2">
+                <p><i style="font-size: 20px; color: red; cursor: pointer;  padding: 5px;" class="far fa-check-square"></i> I agree to the <span style="color: brown;">Terms and Conditions</span>  &  <span style="color: brown;"Subscribe with Whatsapp</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ############################################ car video styling ####################################3 -->
+
+    <section class="bg-black" >
+        <div class="container">
+
+           <div class="heighlight" style="border-bottom: 1px solid white;">
+             <h4 class="pt-5 ps-5 mb-4" >Explore Key Highlights</h4>
+           </div>
+        
+            <div >
+                <div class="ifram_video video ps-5 mt-5" onclick="playVideo(); ">
+                  <iframe class="text-center" src="https://www.youtube.com/embed/Q8RDv6sKfH4?autoplay=1;rel=0&controls=0&showinfo=0&loop=1&playlist=Q8RDv6sKfH4&enablejsapi=1&origin=https%3A%2F%2Fcars.tatamotors.com" frameborder="0" ></iframe>
+                </div>
+            </div>
+
+            <div class="heighlight my-4 pb-2"  style="border-bottom: 1px solid white;">
+                <h4 class="pt-5 ps-5">Harrier Key Features</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ######################################### all car images ########################################## -->
+
+    <section class="design feature-container">
+        <div class="image">
+          <img
+            src="https://cars.tatamotors.com/images/harrier/Automatic-headlamps.png"
+            alt=""/>
+        </div>
+        <div class="content">
+          <h2 >STUNNING IMPACT DESIGN 2.0</h2>
+          <p>
+            Based on the Impact Design 2.0 philosophy, with strong proportions
+            and expressive surfaces providing an incredible stance, powerful
+            road presence and a sense of dynamism, Harrier is truly Above All.
+          </p>
+          <h3>Design</h3>
+        </div>
+      </section>
+
+      <section class="performance feature-container">
+        <div class="content">
+          <h2>EXHILARATING PERFORMANCE</h2>
+          <p>
+            Based on the Impact Design 2.0 philosophy, with strong proportions
+            and expressive surfaces providing an incredible stance, powerful
+            road presence and a sense of dynamism, Harrier is truly Above All.
+          </p>
+          <h3>Performance</h3>
+        </div>
+        <div class="image">
+          <img
+            src="https://cars.tatamotors.com/images/harrier/6_speed_manual_transmission.png"
+            alt=""/>
+        </div>
+      </section>
+
+      <section class="pedigree feature-container">
+        <div class="image">
+            <img
+              src="https://cars.tatamotors.com/images/harrier/pedigree-of-omega-arc.png"
+              alt=""/>
+          </div>
+        <div class="content">
+          <h2>PEDIGREE OF OMEGARC</h2>
+          <p>
+            Based on the OMEGA Architecture, with the rich pedigree of Land Rover’s legendary D8 platform running through its veins, the Harrier is a cut Above All.
+          </p>
+          <h3>Pedigree of OMEGARC</h3>
+        </div>
+      </section>
+
+      <section class="convenience feature-container">
+        <div class="content">
+          <h2>ABSOLUTE CONVENIENCE</h2>
+          <p>
+            Best in class luxurious yet practical interiors and future ready infotainment ensures serene in- cabin experience with a blend of design flourish.
+          </p>
+          <h3>Convenience</h3>
+        </div>
+        <div class="image">
+            <img
+              src="https://cars.tatamotors.com/images/harrier/features/design/harrier-panoramic-sunroof.jpg"
+              alt=""/>
+          </div>
+      </section>
+
+      
+      <section class="infotainment feature-container">
+        <div class="image">
+            <img
+              src="https://cars.tatamotors.com/images/harrier/Premium_JBL_Audio.png"
+              alt=""/>
+          </div>
+        <div class="content">
+          <h2>CLASS LEADING INFOTAINMENT</h2>
+          <p>
+            Next-gen smartphone connectivity with Android Auto™ & Apple Car Play™ along with best voice recognition technology to access navigation, phone calls, music with a press of a button.
+          </p>
+          <h3>Infotainment</h3>
+        </div>
+      </section>
+
+      <section class="safety feature-container">
+        <div class="content">
+          <h2>TOP-OF-THE-LINE SAFETY</h2>
+          <p>
+            Instilling a greater sense of confidence every time you take the wheel, the Harrier comes equipped with ESP as a standard feature ensuring safety in difficult driving conditions.
+          </p>
+          <h3>Safety</h3>
+        </div>
+        <div class="image">
+            <img
+              src="https://cars.tatamotors.com/images/harrier/6Airbags.png"
+              alt=""/>
+          </div>
+      </section>
+
+      <section class="price py-5">
+         <h3>Variants and Pricing (BS6)</h3>
+         <h3 class="h2">Compare all Variants<span>&#x279C;</span></h3>
+      </section>
+
+      <!-- ########################################### manual automatic ##################################### -->
+
+      <section style="background: #fff;">
+          <div class="container ps-5">
+              <div>
+                <ul class="list-unstyled d-flex mt-4 automatic">
+                    <li class="manual">Manual</li>
+                    <li class="ps-5 automatic">Automatic</li>
+                 </ul>
+                 
+              </div>
+
+                <div class="row mt-4 pb-4">
+                  <div class="col-3 harrier">HARRIER XE</div>
+                  <div class="col-3">Diesel, manual</div>
+                  <div class="col-3 rs"> ₹ 14 39 900</div>
+                  <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                 <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XM</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XT</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XT CAMO</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XT+</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XT+ DARK</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ CAMO</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ DT</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ+</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ+ CAMO</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ+ DT</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+
+                <div class="row my-4 pb-4">
+                    <div class="col-3 harrier">HARRIER XZ+ DARK</div>
+                    <div class="col-3">Diesel, manual</div>
+                    <div class="col-3 rs"> ₹ 15 79 400</div>
+                    <div class="col-3 best-offer">Get Best Offer</div>
+                </div>
+          </div>
+      </section>
+
+<!-- ################################## harrier color varrient ############################################## -->
+
+      <section>
+          <div class="varient pt-4 pb-2">
+              <h3>Harrier Colour Variants</h3>
+          </div>
+          <div class="photo">
+              <img src="https://cars.tatamotors.com/images/harrier/color/oberon-black-d-color-banner.jpg" alt="">
+          </div>
+          <div class="img-width">
+              <img src="https://cars.tatamotors.com/images/harrier/color/oberon-black-thumb.jpg" >
+              <img src="https://cars.tatamotors.com/images/harrier/color/Calypso-Red-Thumbnail.jpg" >
+              <img src="https://cars.tatamotors.com/images/harrier/color/oberon-harrier-black-thumb.jpg" >
+              <img src="https://cars.tatamotors.com/images/harrier/color/Orcus-White-Thumbnail.jpg" >
+              <img src="https://cars.tatamotors.com/images/harrier/color/Daytona-Grey-Thumbnail.jpg" >
+          </div>
+      </section>
+
+      <!-- ###################################### Request call back #########################33  -->
+
+    <section class="" style="background: #1d1d1d ;padding: 35px 0; border-top: 5px solid #0b0b0b; color: white;">
+        <div class="container ps-5">
+
+            <h3>Request a Call back</h3>
+
+            <div class="row my-4 request">
+                <div class="col-sm-3 ">
+                    <input class="" type="Name" placeholder="Name*">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="" type="email" placeholder="Email*">
+
+                </div>
+                <div class="col-sm-3">
+                    <input class="" type="text" placeholder="Mobile Number*">
+
+                </div>
+                <div class="col-sm-3">
+                    <button class="width">Submit</button>
+                </div>
+            </div>
+
+            <div class="ps-2">
+                <p><i style="font-size: 20px; color: red; cursor: pointer;  padding: 5px;" class="far fa-check-square"></i> I agree to the <span style="color: brown;">Terms and Conditions</span>  &  <span style="color: brown;">Privacy policy </span> by Tata Motors.</p>
+            </div>
+            
+            <div class="ps-2">
+                <p><i style="font-size: 20px; color: red; cursor: pointer; padding: 5px;"  class="far fa-check-square"></i> Subscribe with Whatsapp</p>
+            </div>
+
+            <div class="review ps-5 pt-3 ">
+                <h5 class="py-2">Reviews </h5>
+                <hr>  
+            </div>
+
+            <div class="owl-carousel owl-theme ps-5 pt-3 ">
+                <div class="item" style=" width: 347px; height: 132;">
+                    <h5 class="easy">Car and Bike</h5>
+                    <hr style="border-bottom:1px solid grey ;">
+                    <div class="row and">
+                        <div class="car_bikes">
+                            <img class="pt-3" src="https://cars.tatamotors.com/images/harrier/reviews/thumbreviews04.jpg">
+                            <p>  With some styling updates, quite a few updates in the features department and a BS6 engine that's now available with an...                 
+                                <span>Read more</span> </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="item" style=" width: 347px; height: 132;">
+                    <h5 class="easy">Times Drive</h5>
+                    <hr style="border-bottom:1px solid grey ;">
+                    <div class="row and">
+                        <div class="car_bikes">
+                            <img class="pt-3" src="https://cars.tatamotors.com/images/harrier/reviews/thumbreviews05.jpg">
+                            <p>  Tata Motors has upgraded the 2020 Harrier with a raft of improvements and is confident it can now achieve its true....                     
+                            <span>Read more</span></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="item" style=" width: 347px; height: 132;">
+                    <h5 class="easy">Autocar India</h5>
+                    <hr style="border-bottom:1px solid grey ;">
+                    <div class="row and">
+                        <div class="car_bikes">
+                            <img class="pt-3" src="https://cars.tatamotors.com/images/harrier/reviews/thumbreviews01.jpg">
+                            <p>  Tata Motors has upgraded the 2020 Harrier with a raft of improvements and is confident it can now achieve its true....
+                                <span>Read more</span></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="item" style= "width: 347px; height: 132;">
+                    <h5 class="easy">Overdrive</h5>
+                    <hr style="border-bottom:1px solid grey ;">
+                    <div class="row and">
+                        <div class="car_bikes">
+                            <img class="pt-3" src="https://cars.tatamotors.com/images/harrier/reviews/thumbreviews04.jpg">
+                            <p> The Tata Harrier with its unique design and shades of Land Rover styling has already hit a sweet spot in the market. It...
+                                <span>Read more</span> </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="item" style="width: 347px; height: 132;">
+                    <h5 class="easy">AutoX</h5>
+                    <hr style="border-bottom:1px solid grey ;">
+                    <div class="row and">
+                        <div class="car_bikes">
+                            <img class="pt-3" src="https://cars.tatamotors.com/images/harrier/reviews/thumbreviews02.jpg">
+                            <p>  The 2020 Harrier is a good example of how small things make a huge difference. Repositioning the USB port, the smaller...                
+                                <span>Read more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <div class="text-center py-4 my-3" style="background: #1d1d1d; color:white; font-size: 15px;">
+        <p>Images shown on the website are for representation purpose only. Colours may vary and some feature elements are from Accessories.</p>
+    </div>
+
+<!-- ############################################## styling ###############################3######### -->
+
+   <section style="background: black;">
+       <div class="container">
+        <div class="row">
+
+           <div class="col-sm-4 pointer ps-5" style="color: brown;" >
+               <h5>Toll Free Number : 1800 209 8282</h5>
+               <h5>WhatsApp Number: 89804 08282</h5>
+           </div>
+
+           <div class="col-sm-4 pointer d-flex ps-5 list-unstyled" style="color: white;" >
+               <li  class="mt-3 and" >Terms & Conditions<li >
+               <li class=" p-3">|<li>
+               <li class="px-2 mt-3 and">Privacy Policy<li >
+           </div>
+
+           <div class="col-sm-4 pointer float-right ps-5 icon">
+               <a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+           </div> 
+        </div>
+      </div>
+   </section>
+
+   <!-- ######################################### footer styling ########################################## -->
+
+  <footer style="background: #202020;">
+      <div class="container">
+        <div class="row ">
+            <div class="col-sm-4 border-white btn-1 ps-4 my-4" >
+               <button class="btn">Request Call Back</button>
+            </div>
+        
+            <div class="col-sm-4 my-4">
+                <button class="btn ms-2">Book Online</button>
+            </div>
+        
+            <div class="col-sm-4 ps-2 my-4">
+                <button class="btn">Download Broucher</button>
+            </div>
+
+           
+        </div>
+      </div>
+  </footer>
+
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/bootstrap-demo/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+  <script>$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})</script>
+</body>
+</html>

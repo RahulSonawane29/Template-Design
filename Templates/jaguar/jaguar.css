@@ -1,0 +1,886 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "JLR Proxima Nova", "Arial Unicode", "arial", "helvetica",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --------- header---------- */
+.navbar {
+  margin: 0px;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 5%), 0 1px 10px 0 rgb(0 0 0 / 5%),
+    0 4px 5px 0 rgba(221, 217, 217, 0.08);
+}
+button {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+.navbar-brand img {
+  max-width: 85px;
+  margin-left: 20px;
+}
+.nav-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 12px;
+  letter-spacing: 1px;
+}
+ul .nav-item:hover {
+  background: rgb(240, 242, 247);
+}
+.icon-right {
+  font-size: 22px;
+}
+.icon-right a {
+  padding: 20px;
+  color: black;
+}
+.icon-right a:hover {
+  background: rgb(240, 242, 247);
+  color: black;
+}
+
+/*********** carasouel-one *************/
+
+.carasouel-one {
+  position: absolute;
+  top: 75px;
+  padding: 0px;
+}
+.carasouel-one img {
+  height: 90vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.carousel-control-prev-icon {
+  width: 50px;
+  height: 40px;
+  margin-left: -100px;
+}
+.carousel-control-next-icon {
+  width: 50px;
+  height: 40px;
+  margin-right: -100px;
+}
+
+/* carousel-caption */
+
+/* card 1 */
+#one {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  height: 170px;
+  width: 320px;
+  background: white;
+}
+.car1 {
+  color: #0c121c;
+  margin-left: -30px;
+  font-weight: 700;
+}
+#car1 {
+  color: #4a4f54;
+  margin: 10px 0px 25px -10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.btn1 {
+  background-color: #9e1b32;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: -55px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn1:hover {
+  background: #fff;
+  color: #0c121c;
+  border: 1px solid black;
+  cursor: pointer;
+}
+/* card 2 */
+#second {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  height: 250px;
+  background: white;
+  width: 320px;
+}
+.car2 {
+  color: #0c121c;
+  margin-left: 20px;
+
+  font-weight: 700;
+  text-align: left;
+}
+#car2 {
+  color: #4a4f54;
+  margin: 10px 0px 25px -110px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.btn2 {
+  background-color: #9e1b32;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: -55px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn2:hover {
+  background: #fff;
+  color: #0c121c;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* card 3 */
+#third {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  height: 225px;
+  background: white;
+  width: 300px;
+}
+.car3 {
+  color: #0c121c;
+  margin-left: 20px;
+
+  font-weight: 700;
+  text-align: left;
+}
+#car3 {
+  color: #4a4f54;
+  margin: 10px 0px 25px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+.btn3 {
+  background-color: #9e1b32;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: -58px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn3:hover {
+  background: #fff;
+  color: #0c121c;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* card 4 */
+#forth {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  height: 250px;
+  background: white;
+  width: 420px;
+}
+.car4 {
+  color: #0c121c;
+  margin-left: 20px;
+
+  font-weight: 700;
+  text-align: left;
+}
+#car4 {
+  color: #4a4f54;
+  margin: 10px 20px 25px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: justify;
+}
+.btn4 {
+  background-color: #9e1b32;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: -220px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn4:hover {
+  background: #fff;
+  color: #0c121c;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/*********** carasouel-two *************/
+
+.carasouel-two {
+  position: absolute;
+  top: 105%;
+  padding: 0px;
+}
+.card-group img {
+  margin: 4px;
+  cursor: pointer;
+}
+.heading {
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: black;
+  margin: 25px auto;
+}
+.small-heading {
+  font-size: 16px;
+  text-align: center;
+  font-weight: none;
+  margin: 45px auto;
+  color: #4a4f54;
+}
+
+/* our vehicles  */
+
+.carasouel-three {
+  position: absolute;
+  top: 160%;
+  padding: 0px;
+  /* margin: auto 40px; */
+}
+.heading1 {
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: black;
+  margin: 60px auto;
+}
+.overlay {
+  position: absolute;
+  top: 1%;
+  bottom: 0;
+  left: 1%;
+  right: 0;
+  height: 63%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000;
+}
+
+.col:hover .overlay {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-body {
+  margin-left: -10px;
+}
+.card-title {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.card-text {
+  font-size: 12px;
+}
+.card-foot1 {
+  font-size: 13px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+h4:hover {
+  text-decoration: underline;
+  color: #9e1b32;
+}
+.fal {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #9e1b32;
+}
+
+/*********** carasouel-two *************/
+
+.carasouel-four {
+  position: absolute;
+  top: 300%;
+  padding: 0px;
+  height: 700px;
+  background-color: #f0f0f0;
+}
+.heading2 {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: black;
+  margin: 60px auto;
+}
+
+/* footer cards */
+
+.foot-card {
+  position: absolute;
+  top: 393%;
+  padding: 0px;
+}
+.icon1 {
+  font-size: 50px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: -15px;
+}
+
+.card-title11 {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  margin: 10px;
+  margin-left: 60px;
+}
+.card-text11 {
+  font-size: 13px;
+  flex-wrap: wrap;
+  font-weight: none;
+  margin: 10px;
+  color: #4a4f54;
+  margin-left: 60px;
+}
+.card-title11:hover {
+  text-decoration: underline;
+  color: #9e1b32;
+  cursor: pointer;
+}
+.icon1:hover {
+  color: #9e1b32;
+  cursor: pointer;
+}
+
+/* footer  */
+.foot-card2 {
+  position: absolute;
+  top: 428%;
+  padding: 0px;
+}
+.foot-card2 {
+  display: flex;
+  /* height: 120vh; */
+  /* background-color: #005392; */
+  padding-left: 120px;
+  padding-right: 150px;
+  /* padding-top: 80px; */
+}
+
+footer {
+  /* color: rgba(255, 255, 255, 0.5); */
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+  /* width: 250px; */
+  margin-left: 60px;
+}
+
+footer ul label {
+  margin-bottom: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+}
+footer ul li {
+  margin-bottom: 15px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  color: #4a4f54;
+}
+footer ul li:hover {
+  color: #9e1b32;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer ul .labels {
+  padding-top: 25px;
+}
+.footer2 {
+  margin-top: 50px;
+  margin-left: -580px;
+}
+.footer2 span {
+  display: inline-flex;
+}
+.social {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.fab {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+/* .FooterNav__list-item {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+.fab {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #4a4f54;
+}
+.social-cell {
+  color: #4a4f54;
+  margin: auto 10px;
+}
+
+.TargetLinks {
+  text-decoration: none;
+}
+.social-cell:hover {
+  color: #9e1b32;
+  text-decoration: underline;
+} */
+
+.india {
+  position: absolute;
+  top: 510%;
+
+  padding-top: 14px;
+  border-top: 1px solid #caccce;
+  border-bottom: 1px solid #cccecf;
+}
+.india2 label img {
+  margin-left: 100px;
+}
+.india3 {
+  margin-left: 60px;
+}
+.india2 label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  color: #4a4f54;
+}
+.india2 label:hover {
+  color: #9e1b32;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.last-para {
+  position: absolute;
+  top: 518%;
+  color: #4a4f54;
+  font-size: 11px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+
+  /* background-color: #9e1b32; */
+  padding: 20px;
+}
+
+.para {
+  padding-left: 100px;
+}
+
+.social-media {
+  display: none;
+}
+
+/* social icon hover effect */
+.fa-facebook-f:hover {
+  color: #fff;
+  background-color: darkblue;
+  padding: 10px 15px;
+}
+.fa-twitter:hover {
+  color: #fff;
+  background-color: rgb(61, 171, 223);
+  padding: 10px 15px;
+}
+.fa-youtube:hover {
+  color: #fff;
+  background-color: red;
+  padding: 10px 15px;
+}
+.fa-instagram:hover {
+  color: #fff;
+  background-color: rgb(233, 19, 101);
+  padding: 10px 15px;
+}
+.fa-linkedin-in:hover {
+  color: #fff;
+  background-color: rgb(19, 100, 153);
+  padding: 10px 15px;
+}
+
+/* -------=============--------Mobile Device------=============----------- */
+
+@media only screen and (max-width: 850px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navbar-brand img {
+    max-width: 70px;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+    color: rgba(247, 241, 241, 0.55);
+  }
+
+  .navbar-brand {
+    margin-left: 40px;
+  }
+  .icon-right a {
+    padding: 15px;
+    color: black;
+  }
+  .icon-right a:hover {
+    /* padding: 15px; */
+
+    background: rgb(240, 242, 247);
+    color: black;
+  }
+
+  /* carasouel  */
+  .carasouel-one {
+    position: absolute;
+    top: 60px;
+    /* padding: 0px; */
+  }
+  .carasouel-one img {
+    height: 40vh;
+  }
+  .carousel-control-prev-icon {
+    width: 50px;
+    height: 40px;
+    margin-left: -5px;
+  }
+  .carousel-control-next-icon {
+    width: 50px;
+    height: 40px;
+    margin-right: -5px;
+  }
+  .carousel-inner {
+    overflow: visible;
+  }
+  /* card 1 */
+  .carousel-caption {
+    position: absolute;
+    z-index: 3;
+  }
+  #one {
+    top: 5px;
+    left: 15px;
+    height: 110px;
+    width: 200px;
+    background: #fff;
+    /* z-index: 4; */
+  }
+
+  .car1 {
+    color: #0c121c;
+    margin-left: -30px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  #car1 {
+    color: #4a4f54;
+    margin: 10px 0px 5px -5px;
+    font-size: 10px;
+    font-weight: 700;
+    /* font-size: 14px; */
+  }
+  .btn1 {
+    background-color: #9e1b32;
+    color: #fff;
+    padding: 5px 5px;
+    margin-left: -40px;
+    margin-top: -50px;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  /* card 2 */
+  #second {
+    /* position: absolute; */
+    top: 5px;
+    left: 15px;
+    height: 180px;
+    background: white;
+    width: 300px;
+  }
+  .car2 {
+    color: #0c121c;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  #car2 {
+    color: #4a4f54;
+    margin: 10px 0px 25px -110px;
+    font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .btn2 {
+    background-color: #9e1b32;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: -55px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  /* card 3 */
+  #third {
+    /* position: absolute; */
+    top: 5px;
+    left: 15px;
+    height: 170px;
+    background: white;
+    width: 270px;
+  }
+  .car3 {
+    color: #0c121c;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  #car3 {
+    color: #4a4f54;
+    margin: 10px 0px 25px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+  }
+  .btn3 {
+    background-color: #9e1b32;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: -40px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  /* card 4 */
+  #forth {
+    /* position: absolute; */
+    top: 5px;
+    left: 15px;
+    height: 250px;
+    background: white;
+    width: 200px;
+  }
+  .car4 {
+    color: #0c121c;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+  }
+  #car4 {
+    color: #4a4f54;
+    margin: 10px 20px 25px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: justify;
+  }
+  .btn4 {
+    background-color: #9e1b32;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: -10px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  /* carasouel-two */
+  .carasouel-two {
+    position: absolute;
+    top: 50%;
+    padding: 0px;
+  }
+  .card-group img {
+    margin: 0px;
+
+    height: 150px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  .carousel-item {
+    display: block;
+  }
+  .heading {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: black;
+    margin: 25px auto;
+  }
+  .small-heading {
+    font-size: 14px;
+    text-align: center;
+    font-weight: none;
+    margin: 30px auto;
+    color: #4a4f54;
+  }
+  /* our vehicles */
+  .carasouel-three {
+    position: absolute;
+    top: 95%;
+    padding: 0px;
+    /* margin: auto 40px; */
+  }
+  .heading1 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: black;
+    margin: 60px auto;
+  }
+  /*********** carasouel-two *************/
+
+  .carasouel-four {
+    position: absolute;
+    top: 430%;
+    padding: 0px;
+    height: 1500px;
+    background-color: #f0f0f0;
+  }
+  /* foot cards  */
+  .foot-card {
+    position: absolute;
+    top: 640%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* social icon  */
+  .foot-card2 {
+    display: none;
+  }
+  .join {
+    margin-left: 120px;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+    letter-spacing: 1px;
+    color: black;
+  }
+  .social-media {
+    position: absolute;
+    top: 760%;
+  }
+  .social-media ul li {
+    display: inline-flex;
+  }
+
+  .fa-facebook-f:hover {
+    color: #fff;
+    background-color: darkblue;
+    padding: 10px 15px;
+  }
+  .fa-twitter:hover {
+    color: #fff;
+    background-color: rgb(61, 171, 223);
+    padding: 10px 15px;
+  }
+  .fa-youtube:hover {
+    color: #fff;
+    background-color: red;
+    padding: 10px 15px;
+  }
+  .fa-instagram:hover {
+    color: #fff;
+    background-color: rgb(233, 19, 101);
+    padding: 10px 15px;
+  }
+  .fa-linkedin-in:hover {
+    color: #fff;
+    background-color: rgb(19, 100, 153);
+    padding: 10px 15px;
+  }
+  /* india  */
+  .india {
+    position: absolute;
+    top: 780%;
+
+    padding-top: 14px;
+    border-top: 1px solid #caccce;
+    border-bottom: 1px solid #cccecf;
+  }
+
+  .india2 label img {
+    margin-left: 40px;
+  }
+  .india3 {
+    margin-left: 70px;
+    display: block;
+    padding: 5px;
+  }
+  .india2 label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    color: #4a4f54;
+  }
+  /* footer para  */
+  .last-para {
+    position: absolute;
+    top: 800%;
+    color: #4a4f54;
+    font-size: 11px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    /* background-color: #9e1b32; */
+    padding: 20px;
+  }
+  .para {
+    /* border-top: 1px solid #cdcfd1; */
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}

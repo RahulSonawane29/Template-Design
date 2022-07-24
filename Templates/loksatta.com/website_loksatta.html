@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://www.loksatta.com/wp-content/uploads/2021/09/cropped-ls-feviicon-1.png?w=192"
+    />
+    <link rel="stylesheet" href="website_loksatta.css" />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-demo/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-demo/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Loksatta Marathi-News</title>
+  </head>
+  <body>
+    <!--========================== header ========================== -->
+    <header style="background-color: white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <p id="dateText"></p>
+
+            <!-- <time datetime="2021-04-10"> सोमवार, ४ ऑक्टोबर, २०२१</time> -->
+          </div>
+
+          <div class="col-sm-4 language">
+            <ul class="list-unstyled list_1 d-flex" style="font-size: 0.75rem">
+              <li>English</li>
+              |
+              <li>தமிழ்</li>
+              |
+              <li>বাংলা</li>
+              |
+              <li>മലയാളം</li>
+              |
+              <li>हिंदी</li>
+              |
+              <li style="color: #dc0505">मराठी</li>
+              |
+              <li>Business</li>
+              |
+              <li>बिज़नेस</li>
+              |
+              <li>Insurance</li>
+              |
+            </ul>
+          </div>
+
+          <div class="col-sm-4 font_1">
+            <ul class="list-unstyled d-flex font_size" style="float: right">
+              <span
+                ><img
+                  src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/facebook-icon.svg"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/twitter-icon.svg"
+                  alt=""
+              /></span>
+              <!-- <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter-square"></i></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 loksata">
+          <img
+            src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/logo/loksatta.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- #################################### nav styling ############################################# -->
+
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1 icon_2 pt-2">
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <div class="overlay-content">
+                <footer style="display: flex">
+                  <ul>
+                    <li>होम</li>
+                    <li>ई-पेपर</li>
+                    <li>महाराष्ट्र</li>
+                    <li>शहर</li>
+                    <li>मुंबई</li>
+                    <li>पुणे</li>
+                    <li>ठाणे</li>
+                    <li>नवी मुंबई</li>
+                    <li>वसई</li>
+                    <li>विरार</li>
+                    <li>पालघर</li>
+                    <li>नाशिक</li>
+                    <li>नागपूर</li>
+                    <li>औरंगाबाद</li>
+                  </ul>
+
+                  <ul>
+                    <li>कोल्हापूर</li>
+                    <li>देश-विदेश</li>
+                    <li>करोना</li>
+                    <li>अपडेट्स</li>
+                    <li>निवडणूक २०२२</li>
+                    <li>मनोरंजन</li>
+                    <li>क्रीडा</li>
+                    <li>ट्वेन्टी-२० विश्वचषक</li>
+                    <li>राशिभविष्य</li>
+                    <li>ऑटो तंत्रज्ञान</li>
+                    <li>संपादकीय</li>
+                  </ul>
+
+                  <ul>
+                    <li>अन्वयार्थ</li>
+                    <li>व्यक्तिवेध</li>
+                    <li>पहिली बाजू</li>
+                    <li>लाल किल्ला</li>
+                    <li>उलटा चष्मा</li>
+                    <li>समोरच्या बाकावरून</li>
+                    <li>बुकमार्क</li>
+                    <li>अन्यथा</li>
+                    <li>चतु:सूत्र</li>
+                    <li>स्वरावकाश</li>
+                    <li>अद्वयबोध</li>
+                    <li>विशेष</li>
+                    <li>लेख</li>
+                    <li>लोकमानस</li>
+                    <li>लोकसत्ता</li>
+                    <li>विश्लेषण</li>
+                  </ul>
+                  <ul>
+                    <li>लाइफस्टाइल</li>
+                    <li>ट्रेंडिंग</li>
+                    <li>फोटो</li>
+                    <li>व्हिडिओ</li>
+                    <li>वेब</li>
+                    <li>स्टोरीज</li>
+                    <li>अर्थसत्ता</li>
+                    <li>लेख</li>
+                    <li>चतुरंग</li>
+                    <li>लोकरंग</li>
+                    <li>बालमैफल</li>
+                    <li>व्हिवा</li>
+                    <li>वास्तुरंग</li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+            <span
+              class="openNav"
+              style="font-size: 25px; cursor: pointer"
+              onclick="openNav()"
+              >&#9776;</span
+            >
+            <!-- <a href=""><i class="fas fa-bars"></i></a> -->
+          </div>
+
+          <div class="col-sm-10 maha">
+            <ul
+              class="list-unstyled d-flex pt-2"
+              style="justify-content: space-evenly"
+            >
+              <li><i class="fas fa-home"></i></li>
+              <li>महाराष्ट्र</li>
+              <li>शहर</li>
+              <li>देश-विदेश</li>
+              <li>मनोरंजन</li>
+              <li>क्रीडा</li>
+              <li>संपादकीय</li>
+              <li>राशीभविष्य</li>
+              <li>लाइफस्टाइल</li>
+              <li>ट्रेंडिंग</li>
+              <li>लेख</li>
+              <li>फोटो</li>
+              <li>व्हिडिओ</li>
+              <li>FYI</li>
+              <li>समजून घ्या</li>
+              <li>अन्य</li>
+              <li>ब्लॉग्स</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-1 icon_2 pt-2">
+            <a href=""><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ##################################### section styling ################################################# -->
+
+    <section style="background-color: white">
+      <div class="pune_list py-2">
+        <ul class="list-unstyled d-flex">
+          <li style="color: red; font-weight: 600">ट्रेंडिंग</li>
+          <li>गोष्ट पुण्याची</li>
+          <li>गोष्ट मुंबईची</li>
+          <li>मुंबई</li>
+          <li>पुणे</li>
+          <li>ठाणे</li>
+          <li>कोरोना वायरस</li>
+          <li>गोवा विधानसभा निवडणूक 2022</li>
+        </ul>
+        <hr />
+      </div>
+    </section>
+
+    <!-- ######################################## main styling ############################################# -->
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 advertisement ps-5">
+          <img
+            src="https://s0.2mdn.net/8622906/NASCAR_Daytona_500_Daytona_International_Speedway_Display_Banner_Tomorrow_static_160x600.jpg"
+            style="position: fixed"
+            alt=""
+          />
+        </div>
+
+        <div class="col-sm-8 top-add">
+          <img
+            class="add"
+            src="https://s0.2mdn.net/8622906/NASCAR_Daytona_500_Daytona_International_Speedway_Display_Banner_Today_static_728x90.jpg"
+          />
+
+          <div class="row middle_1 py-3">
+            <div class="col-sm-5">
+              <div class="title-img position-relative" style="z-index: -1">
+                <a href="#">
+                  <img
+                    class="w-100"
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/lata-mangesk.jpg"
+                    alt=""
+                  />
+                  <span class="overlay"></span>
+                </a>
+                <span
+                  class="position-absolute start-0 fs-4 fw-bold"
+                  style="
+                    left: 40px !important;
+                    bottom: 10px !important;
+                    color: rgb(34, 33, 33);
+                  "
+                  >Lata Mangeshkar : भारताचा, भेदांपलीकडला सूर..</span
+                >
+              </div>
+              <div class="row middle_inside_1">
+                <div class="col-sm-7 py-3">
+                  <p>
+                    शाहरुख खान लतादीदींचं अत्यंदर्शन घेताना थुंकला की…; जाणून
+                    Viral Photos मागील सत्य
+                  </p>
+                </div>
+                <div class="col-sm-4 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Shah-Rukh-Khan-lata-mangeshkar-funeral.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row middle_inside_1">
+                <div class="col-sm-7 py-3">
+                  <p>
+                    सुप्रिया सुळेंनी खाली बसून वडिलांना घातले बूट; लतादीदींच्या
+                    अंत्यदर्शनावेळचा ‘तो’ फोटो व्हायरल
+                  </p>
+                </div>
+                <div class="col-sm-4 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Sharad-Pawar-Supriya-Sule.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row middle_inside_1">
+                <div class="col-sm-7 py-3">
+                  <p>
+                    लता मंगेशकर यांच्या निधनानंतर आनंद महिद्रांचं ट्विट चर्चेत;
+                    म्हणाले, “करोना मी तुझा तिरस्कार करतो, जाता जाता…”
+                  </p>
+                </div>
+                <div class="col-sm-4 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Anand-Mahindra-Lata-Mangeshkar.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 news_1">
+              <p class="under_line">
+                Nobel Prize 2021: मनाबे, हॅसलमन आणि पॅरिसी यांना
+                भौतिकशास्त्रातील नोबेल पुरस्‍कार
+              </p>
+              <p class="under_line">
+                Coronavirus : राज्यभरात दिवसभरात २ हजार ८४० रूग्ण करोनामुक्त ;
+                रिकव्हरी रेट ९७.३२ टक्के
+              </p>
+              <p>
+                पंढरपूर : विठुरायाच्या भक्तांसाठी आनंद वार्ता! ; दररोज १० हजार
+                भाविकांना घेता येणार मुखदर्शन
+              </p>
+              <p>
+                मोठी बातमी! धोनीसह इंग्लंड क्रिकेटला जबर धक्का; ‘स्टार’ खेळाडू
+                IPLला मुकणारच, सोबतच…
+              </p>
+              <p>
+                डोंबिवलीत खबळजनक घटना ; रिक्षामधून ओढून बेदम मारहाण करत एकाचा
+                गळा कापला!
+              </p>
+              <p>अवकाशात होणार चित्रपटाचे शुटिंग….</p>
+              <p>
+                World Championship : नेमबाज ऐश्वर्य तोमरने विश्वविक्रम करत
+                पटकावले सुवर्णपदक
+              </p>
+              <p>
+                ओल्या अंडरवेअरच्या सहाय्याने हत्येच्या गुन्हेचा उलगडा, आरोपीला
+                बेड्या; पुणे पोलिसांची जबरदस्त कारवाई
+              </p>
+            </div>
+
+            <div class="col-sm-3">
+              <img
+                src="https://s0.2mdn.net/simgad/2269144016972335410"
+                alt=""
+              />
+              <div
+                class="container manoranjan"
+                style="width: 300px; border: 1px solid black"
+              >
+                <h4 class="py-2">मनोरंजन</h4>
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/01/sunny-leone.jpg?resize=830,461"
+                      alt=""
+                    />
+                    <p>
+                      “पती हर्ष लिंबाचियानं तुझा प्रसिद्धीसाठी वापर केला”
+                      म्हणणाऱ्या ट्रोलर्सना कॉमेडियन भारती सिंहचं सडेतोड उत्तर,
+                      म्हणाली…
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/jurassic-world-dominion-trailer.jpeg?resize=830,461"
+                      alt=""
+                    />
+                    <p>
+                      BB१५ : जय भानुशाली आहे शोचा सर्वाधिक फी घेणारा स्पर्धक,
+                      रक्कम ऐकून तुम्हीही व्हाल थक्क
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi-lahiri-bappi-lahiri-gold-ornaments.jpeg?resize=650,362"
+                      alt=""
+                    />
+                    <p>
+                      Bigg Boss Marathi 3: “तो फक्त बोलबच्चन आणि…,” विकास
+                      पाटीलने उत्कर्ष शिंदेवर साधला निशाना
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/alia-bhatt.jpg?resize=830,461"
+                      alt=""
+                    />
+                    <p>
+                      लग्न होऊ एक वर्ष सुद्धा झालं? दिग्दर्शक विक्रम भट्ट
+                      यांच्या दुसऱ्या लग्नाची बातमी आली समोर
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/kangana-ranaut-cm-yogi-adityanath-up-assembly-election-2022-1.jpeg?resize=650,362"
+                      alt=""
+                    />
+                    <p>
+                      BB 15 : “शमिता आंटी मग सलमान कोण?,” शमिताला ‘आंटी’
+                      बोलल्यामुळे करण कुंद्रा झाला ट्रोल
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ################################ ताज्या बातम्या styling ################################################## -->
+
+          <div class="row news_img mt-3">
+            <h4 style="font-weight: bold"><span>ताज्या बातम्या</span></h4>
+
+            <div class="col-sm-4">
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>
+                    “बाप-बेटे जेलमध्ये जाणार”, संजय राऊतांच्या इशाऱ्यावर भाजपा
+                    नेत्याचं प्रत्युत्तर, म्हणाले, “सलीम-जावेद दोनो…”
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Mohit-Kamboj-responds-to-Sanjay-Raut-allegations.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    Bappi Lahiri Dies: निधनापूर्वीच्या बप्पीदांच्या शेवटच्या
+                    पोस्टमध्येही होता Gold चा उल्लेख; म्हणाले होते…
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi-lahiri-Gold.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest py-1">
+                <div class="col-sm-7">
+                  <p>
+                    फॅन्टॅस्टिक, तुझं नाव काय आहे? बप्पी लहरींच्या गणपतीच्या
+                    चेनने केले होते मायकल जॅक्सनला आकर्षित
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi-lahiri-michael-jackson.jpeg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="row latest pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    Renault Kiger, Nissan Magnite आणि Honda Jazz किती सुरक्षित
+                    आहेत? जाणून घ्या ग्लोबल NCAP क्रॅश रेटिंगमधील स्कोअर
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/GNCAP-Car-Crash.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest">
+                <div class="col-sm-7">
+                  <p>
+                    राज्यातील जनतेनं भाजपाला चोख प्रत्युत्तर दिलं – अशोक चव्हाण
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Sanjay-Raut-ED.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    पाव शतकाच्या पाठपुराव्यानंतर सिंधुदुर्गात विमानतळाचे स्वप्न
+                    साकार
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/flipkart.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>
+                    Bappi Lahiri Passes Away : एक असे गायक- संगीतकार, ज्यांच्या
+                    डिस्को म्यूझिकनं सर्वांना लावलं वेड
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi-lahiri-.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>
+                    ‘पु.ल.देशपांडे कला अकादमीचा कायापालट करण्यासाठी खासगी
+                    सल्लागार’
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Kirit-Somaiya-Sanjay-Raut-1.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row latest py-3">
+                <div class="col-sm-7">
+                  <p>
+                    WhatsApp यूजर्सही फेसबुकप्रमाणे कव्हर फोटो ठेवू शकतील, जाणून
+                    घ्या कसं आहे नवं अपडेट
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/whatsapp-1.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="button1">
+              <button>आणखी वाचा<span>&#129106;</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 advertisement">
+          <img src="img/GIF-160x600_DV360.gif" style="position: fixed" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <!-- #################################### section styling ###############################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8" style="background-color: #0a112d; color: #fff">
+          <div class="photo_galary py-3">
+            <ul class="list-unstyled d-flex ps-3">
+              <li class="photo">फोटो गॅलरी</li>
+              <li class="li">आजचे फोटो</li>
+              <li class="li">बातम्या</li>
+              <li class="li">मनोरंजन</li>
+              <li class="li">लाइफस्टाइल</li>
+              <li class="li">ट्रेंडिंग</li>
+              <li class="li">क्रीडा</li>
+            </ul>
+          </div>
+
+          <div class="row galary_img">
+            <div class="col-sm-3">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi-lahari-.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                Photos : दागिन्यांचे शौकीन असणारे बप्पीदा चहा देखील सोन्याच्या
+                कपमधूनच प्यायचे
+              </p>
+            </div>
+
+            <div class="col-sm-3">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/Sanjay_Raut_Mems.png?resize=310,174"
+                alt=""
+              />
+              <p>
+                Photo : संजय राऊतांच्या पत्रकार परिषदेनंतर सोशल मीडियावर मीम्स
+                तुफान व्हायरल!
+              </p>
+            </div>
+
+            <div class="col-sm-3">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/apurva-gore-photoshoot.jpeg?resize=310,174"
+                alt=""
+              />
+              <p>
+                Photos : ‘आई कुठे काय करते’ मालिकेतील अभिनेत्रीचे मराठमोळ्या
+                अंदाजात फोटोशूट
+              </p>
+            </div>
+
+            <div class="col-sm-3">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/snow-taj-mahal-at-kashmir-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p>Photos: बर्फापासून बनवलेला ताजमहाल बघितला का?</p>
+            </div>
+          </div>
+
+          <div class="button2 pb-3">
+            <button>आणखी वाचा<span>&#129106;</span></button>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ##################################### actors styling #################################### -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8">
+          <div class="row actor">
+            <h4 class="py-3" style="font-weight: bold">मनोरंजन</h4>
+            <div class="col-sm-4">
+              <div>
+                <img
+                  src="https://www.loksatta.com/wp-content/uploads/2022/02/pm-modi-with-bappi-lahiri.jpg?resize=310,174"
+                  alt=""
+                />
+                <p>
+                  “त्जिंदादिल स्वभाव…”;बप्पी लहरींचं निधन;मोदींनी फोटो शेअर करत
+                  व्यक्त केल्या भावना
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://www.loksatta.com/wp-content/uploads/2022/02/haarsh-limbachiyaa-bharti-singh.jpeg?resize=310,174"
+                  alt=""
+                />
+                <p>
+                  Bigg Boss 15: ‘ही’ महिला स्पर्धक अंघोळ करत असताना प्रतीकने
+                  तोडला दरवाजा अन्…
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div>
+                <img
+                  src="https://www.loksatta.com/wp-content/uploads/2022/02/mazi-tuzi-reshimgath-jesica.jpeg?resize=310,174"
+                  alt=""
+                />
+                <p>
+                  ‘माझी तुझी रेशीमगाठ’मध्ये जेसिकाची भूमिका साकारणारी अभिनेत्री
+                  आहे तरी कोण?
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi-lahiri-3.jpg?resize=310,174"
+                  alt=""
+                />
+                <p>
+                  ‘माझे कुटुंब इथेच आहे, मी फरार होणार नाही’; जामीनासाठी आर्यन
+                  खानचा युक्तिवाद
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4 actor_2">
+              <div class="row">
+                <div class="col-sm-7">
+                  <p>
+                    घटस्फोटानंतर २०० कोटी रुपयांची पोटगी समांथाने का नाकारली?
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/tujha-mjha-sansarala-ani-kay-hav.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-7">
+                  <p>
+                    सेटवर २५ बाउंसर आणि व्हॅनिटी तयार, पण शाहरुखने अजय देवगणसोबत
+                    चित्रीकरणास दिला नकार
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/deep-reena.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button1 mt-3">
+            <button>आणखी वाचा<span>&#129106;</span></button>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ############################### maharashtra styling ############################################## -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 actor">
+          <h4 class="py-3" style="font-weight: bold">महाराष्ट्र</h4>
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/Dombivli-Eve-Teasing.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                गावठी कट्टय़ांच्या शोधासाठी महाराष्ट्र, मध्यप्रदेश सरकारची
+                संयुक्त मोहीम
+              </p>
+            </div>
+
+            <div class="col-sm-4">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/Raut-Rane.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                “तू आलास कधी? शिवसेनेच्या…”; एकेरी उल्लेख करत नारायण राणेंचा
+                संजय राऊतांवर हल्लाबोल
+              </p>
+            </div>
+
+            <div class="col-sm-4 actor_2">
+              <div class="row pb-3" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>‘सरकारी पाहुण्यां’ची चिंता नाही!</p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/narayan-rane-on-sanjay-raut.jpeg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>परळीत एनसीबी अधीक्षकास अटक</p>
+                </div>
+                <div class="col-sm-5 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/maharashtra-cabinet-reshuffle.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    कोल्हापूर : महालक्ष्मीच्या मुख्य दर्शनाच्या लाभासाठी आता
+                    ताशी हजार भक्तांचे नियोजन
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2021/12/nana-patole-4.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button1 mt-4">
+            <button>आणखी वाचा<span>&#129106;</span></button>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ######################################### देश-विदेश styling ##########################################3 -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 actor">
+          <h4 class="py-3" style="font-weight: bold">देश-विदेश</h4>
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/petrol-diesel.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                इंधन दरवाढीचा भडका; ‘या’ शहरात पेट्रोलसोबत आता डिझेलही शंभरीपार
+              </p>
+            </div>
+
+            <div class="col-sm-4">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/01/Petrol-Diesel-Price-on-2-January-2022.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                पेट्रोल-डिझेलच्या किमतीत ५ ते ६ रुपयांनी होणार वाढ? पाच
+                राज्यातल्या निवडणुकांनंतर पुन्हा इंधन दरवाढीची शक्यता
+              </p>
+            </div>
+
+            <div class="col-sm-4 actor_2">
+              <div class="row" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>
+                    योगी आदित्यनाथ यांच्या ‘त्या’ विधानानंतर प्रियांका गांधींनी
+                    पुन्हा हातात घेतला झाडू! म्हणाल्या, “त्यांनी फक्त…!”
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Arvind-Kejriwal-Charanjit-Singh-Channi.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>एअर इंडिया टाटांकडे</p>
+                </div>
+                <div class="col-sm-5 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Himanta-Biswa-1.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-sm-7">
+                  <p>चीन आणि भारत यांच्यात तवांगमध्ये चकमक</p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/pm-narendra-modi-in-punjab-election.jpeg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button1 mt-4">
+            <button>आणखी वाचा<span>&#129106;</span></button>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ########################################  क्रीडा styling ########################################3 -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 actor">
+          <h4 class="py-3" style="font-weight: bold">क्रीडा</h4>
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/kkr.jpeg?resize=310,174"
+                alt=""
+              />
+              <p>‘आयपीएल’ बाद फेरी : मुंबई स्पर्धेबाहेर!</p>
+            </div>
+
+            <div class="col-sm-4">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/Rohit-Sharma-2.jpg?resize=310,174"
+                style="width: 320px; height: 180px"
+                alt=""
+              />
+              <p>
+                IPL 2021 : आता ‘प्लेऑफ्स’चा रंगणार थरार; नवा विजेता मिळण्याची
+                शक्यता!
+              </p>
+            </div>
+
+            <div class="col-sm-4 actor_2">
+              <div class="row" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>
+                    ट्वेन्टी-२० विश्वचषक क्रिकेट स्पर्धा : हार्दिक, किशन, चहर
+                    यांच्याबाबत पेच
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/psl-1.jpeg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>
+                    कनिष्ठ जागतिक नेमबाजी स्पर्धा : रिदम-विजयवीरकडून
+                    ‘सुवर्णदशकपूर्ती’
+                  </p>
+                </div>
+                <div class="col-sm-5 py-3">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/indvswi-7.jpeg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    भारत-ऑस्ट्रेलिया क्रिकेट मालिका : आक्रमक खेळाचा भारताचा
+                    निर्धार
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Shikhar_Dhawan_Chahal.png?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button1 mt-4">
+            <button>आणखी वाचा<span>&#129106;</span></button>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ##############################################3 मल्टीमीडिया styling ####################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8" style="background-color: #0a112d; color: #fff">
+          <div class="photo_galary py-3">
+            <ul class="list-unstyled d-flex ps-3">
+              <li class="photo">मल्टीमीडिया</li>
+              <li class="li">व्हिडिओ</li>
+            </ul>
+          </div>
+
+          <div class="row galary_img">
+            <div class="col-sm-3">
+              <a
+                href="https://www.loksatta.com/videos/kyc-mumbai/2623604/know-your-city-mumbai-episode-86/"
+                rel="bookmark"
+              >
+                <img
+                  width="310"
+                  height="174"
+                  src="https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?w=310&amp;h=174&amp;crop=1"
+                  class="attachment-newspack-article-block-landscape-medium size-newspack-article-block-landscape-medium wp-post-image"
+                  alt=""
+                  loading="lazy"
+                  srcset="
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg                 1280w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=670,377   670w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=768,432   768w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=830,467   830w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=650,366   650w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=310,174   310w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=1200,675 1200w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=150,84    150w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=81,45      81w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/maxresdefault.jpeg?resize=100,56    100w
+                  "
+                  sizes="(max-width: 310px) 100vw, 310px"
+                />
+                <span class="post-overlay"></span>
+              </a>
+              <p class="para pt-2">
+                मुंबईतून साम्राज्यविस्तार झालेल्या तीन विदेशी उद्योगसमूहांची
+                कहाणी | गोष्ट मुंबईची भाग ८६ | ep 86
+              </p>
+              <div class="button">
+                <a
+                  href="https://www.loksatta.com/videos/kyc-mumbai/2623604/know-your-city-mumbai-episode-86/"
+                  ><i class="fas fa-video"></i>Watch · 10:35 min</a
+                >
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <a
+                href="https://www.loksatta.com/videos/vishesh-vartankan/2622647/who-is-ajay-kumar-mishra-at-the-center-of-lakhimpur-kheri-violence/"
+                rel="bookmark"
+              >
+                <img
+                  width="310"
+                  height="174"
+                  src="https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?w=310&amp;h=174&amp;crop=1"
+                  class="attachment-newspack-article-block-landscape-medium size-newspack-article-block-landscape-medium wp-post-image"
+                  alt=""
+                  loading="lazy"
+                  srcset="
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg                 1280w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=670,377   670w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=768,432   768w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=830,467   830w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=650,366   650w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=310,174   310w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=1200,675 1200w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=150,84    150w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=81,45      81w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/ajay-kumar-tb.jpg?resize=100,56    100w
+                  "
+                  sizes="(max-width: 310px) 100vw, 310px"
+                />
+                <span class="post-overlay"></span>
+              </a>
+              <p class="para1 pt-2">
+                लखीमपूर खेरी हिंसाचारात केंद्रस्थानी असलेले अजय कुमार मिश्रा कोण
+                आहेत?
+              </p>
+              <div class="button pt-3">
+                <a
+                  href="https://www.loksatta.com/videos/kyc-mumbai/2623604/know-your-city-mumbai-episode-86/"
+                  ><i class="fas fa-video"></i>Watch · 01:53 min</a
+                >
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <a
+                href="https://www.loksatta.com/videos/krida/2622109/bumper-offer-to-players-from-pakistan-cricket-board-for-t-20-world-cup/"
+                rel="bookmark"
+              >
+                <img
+                  width="310"
+                  height="174"
+                  src="https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?w=310&amp;h=174&amp;crop=1"
+                  class="attachment-newspack-article-block-landscape-medium size-newspack-article-block-landscape-medium wp-post-image"
+                  alt=""
+                  loading="lazy"
+                  srcset="
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg                 1280w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=670,377   670w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=768,432   768w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=830,467   830w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=650,366   650w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=310,174   310w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=1200,675 1200w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=150,84    150w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=81,45      81w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/t20-news.tb_.jpg?resize=100,56    100w
+                  "
+                  sizes="(max-width: 310px) 100vw, 310px"
+                />
+                <span class="post-overlay"></span>
+              </a>
+              <p class="para2 pt-2">
+                T-20 विश्वचषकासाठी पाकिस्तानी क्रिकेट बोर्डाकडून खेळाडूंना बंपर
+                ऑफर
+              </p>
+              <div class="button pt-3">
+                <a
+                  href="https://www.loksatta.com/videos/kyc-mumbai/2623604/know-your-city-mumbai-episode-86/"
+                  ><i class="fas fa-video"></i>Watch · 02:06 min</a
+                >
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <a
+                href="https://www.loksatta.com/videos/vishesh-vartankan/2621094/dagadi-chawl-last-navratri-ustav/"
+                rel="bookmark"
+              >
+                <img
+                  width="310"
+                  height="174"
+                  src="https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?w=310&amp;h=174&amp;crop=1"
+                  class="attachment-newspack-article-block-landscape-medium size-newspack-article-block-landscape-medium wp-post-image"
+                  alt=""
+                  loading="lazy"
+                  srcset="
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg                 1280w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=670,377   670w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=768,432   768w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=830,467   830w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=650,366   650w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=310,174   310w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=1200,675 1200w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=150,84    150w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=81,45      81w,
+                    https://www.loksatta.com/wp-content/uploads/2021/10/dagadi-chwal-tb-1.jpg?resize=100,56    100w
+                  "
+                  sizes="(max-width: 310px) 100vw, 310px"
+                />
+                <span class="post-overlay"></span>
+              </a>
+              <p class="para3 pt-2">
+                दगडी चाळीतील यंदाचा नवरात्रोत्सव हा या मूळ चाळीतील शेवटचा उत्सव
+                ठरू शकतो.
+              </p>
+              <div class="button">
+                <a
+                  href="https://www.loksatta.com/videos/kyc-mumbai/2623604/know-your-city-mumbai-episode-86/"
+                  ><i class="fas fa-video"></i>Watch · 03:41 min</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="button2 py-4">
+            <button>आणखी पाहा<span>&#129106;</span></button>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ############################################## मुंबईच्या बातम्या  ############################################# -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8">
+          <h5 class="py-3" style="font-weight: bold">मुंबईच्या बातम्या</h5>
+          <div class="row">
+            <div class="col-sm-8 sa sachin">
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/narayan-Rane-and-Milind-Narvekar.jpg?resize=310,174"
+                    alt=""
+                  />
+                  <p class="py-2">
+                    राजकीय हस्ताक्षेपाच्या आरोपांनंतर NCB अधिकारी आपले फोन मुंबई
+                    पोलिसांना देणार? समीर वानखेडे म्हणतात…
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Narayan-Rane-Kirit-Somaiya.jpg?resize=310,174"
+                    alt=""
+                  />
+                  <p class="py-2">
+                    राजकीय हस्ताक्षेपाच्या आरोपांनंतर NCB अधिकारी आपले फोन मुंबई
+                    पोलिसांना देणार? समीर वानखेडे म्हणतात…
+                  </p>
+                </div>
+              </div>
+
+              <div class="row sachin2">
+                <div class="col-sm-4">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/01/Sambhajiraje-Uddhav-Thackeray.jpg?resize=310,174"
+                    alt=""
+                  />
+                  <p>
+                    Drugs Case: भाजपाचे नेते मोहित कम्बोज आहेत तरी कोण?,
+                    त्यांच्या मेहुण्याला क्रूझवरुन अटक केल्याचा दावा केला जातोय
+                  </p>
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Sanjay-Raut-Kirit-Somaiya1.jpg?resize=310,174"
+                    alt=""
+                  />
+                  <p>
+                    “…तर तुमच्या जावयाच्या कृत्यासाठी राष्ट्रवादीला जबाबदार
+                    धरावं का?” प्रविण दरेकरांचा नवाब मलिकांना प्रतिप्रश्न!
+                  </p>
+                </div>
+                <div class="col-sm-4">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/Mohit-Kamboj-responds-to-Sanjay-Raut-allegations.jpg?resize=310,174"
+                    alt=""
+                  />
+                  <p>
+                    आर्यन खानच्या अडचणीत वाढ होण्याची शक्यता, एनसीबीच्या हाती
+                    महत्त्वाचा पुरावा
+                  </p>
+                </div>
+              </div>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4 bakola">
+              <div class="row row_1">
+                <div class="col-sm-8">
+                  <p class="mt-5px">एक लस लाखमोलाची!</p>
+                  <p class="team"><span>लोकसत्ता टीम</span></p>
+                </div>
+                <div class="col-sm-4 pt-2">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2015/12/loksatta-author.jpg?w=48"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row row_1 mt-2">
+                <div class="col-sm-8">
+                  <p>लोकमानस : … मग कंपन्यांवर दौलतजादा कशासाठी?</p>
+                  <p class="team"><span>लोकसत्ता टीम</span></p>
+                </div>
+                <div class="col-sm-4 pt-2">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2015/12/loksatta-author.jpg?w=48"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row row_1 mt-2">
+                <div class="col-sm-8">
+                  <p>अब्दुलरझाक गुर्ना</p>
+                  <p class="team"><span>लोकसत्ता टीम</span></p>
+                </div>
+                <div class="col-sm-4 pt-2">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2015/12/loksatta-author.jpg?w=48"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row row_1 mt-2">
+                <div class="col-sm-8">
+                  <p>अव-काळाचे आर्त : ‘काहीच न वाटण्या’चा डिस्टोपिया</p>
+                  <p class="team"><span>लोकसत्ता टीम</span></p>
+                </div>
+                <div class="col-sm-4 pt-2">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2015/12/loksatta-author.jpg?w=48"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="button_1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ################################################ लाइफस्टाइल styling  #################################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8">
+          <h5 class="py-3" style="font-weight: bold">लाइफस्टाइल</h5>
+          <div class="row">
+            <div class="col-sm-4 actor">
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/zumba.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="pt-2">आनंदी जीवन जगायचंय? तर मग ‘या’ गोष्टी स्वीकारा</p>
+            </div>
+
+            <div class="col-sm-4 actor_2">
+              <div class="row" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>
+                    Obstructive Sleep Apnea या आजारामुळे झाले बप्पी लहरी यांचे
+                    निधन; तुम्हालाही दिसत असतील ‘ही’ लक्षणे तर सावध व्हा
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/bappi.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row py-3" style="border-bottom: 1px dotted grey">
+                <div class="col-sm-7">
+                  <p>पाठदुखीकडे करू नका दुर्लक्ष; होऊ शकतो हा आजार</p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/teeth-health.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="row pt-3">
+                <div class="col-sm-7">
+                  <p>
+                    भेसळयुक्त काळी मिरी आणि लाल तिखट ओळखण्याची FSSAI ने सांगितली
+                    ही खास ट्रिक, जाणून घ्या
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img
+                    src="https://www.loksatta.com/wp-content/uploads/2022/02/almond-oil.jpg?resize=310,174"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="button1 mt-4">
+              <button>आणखी वाचा<span>&#129106;</span></button>
+            </div>
+
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- #############################################3  ट्रेंडिंग styling ######################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8">
+          <div class="row actor">
+            <div class="col-sm-4">
+              <h5 class="py-3" style="font-weight: bold">ट्रेंडिंग</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/mumbai-police.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                Bappi Lahiri : मुंबई पोलिसांनी अनोख्या अंदाजात बप्पी लहरींना
+                वाहिली श्रद्धांजली; सोशल मीडियावर पोस्ट व्हायरल
+              </p>
+
+              <div class="jitu">
+                <div
+                  class="row actor_2 adjust pt-4"
+                  style="
+                    border-bottom: 1px dotted grey;
+                    border-top: 1px dotted grey;
+                  "
+                >
+                  <div class="col-sm-8">
+                    <p>
+                      आश्चर्यच! पाणी पिण्यासाठी गायीने शिंगाने नळ खुला केला आणि
+                      नंतर बंद सुद्धा केला…पाहाच
+                    </p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/nandan.jpg?resize=310,174"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="row actor_2 pt-4 adjust">
+                  <div class="col-sm-8">
+                    <p>
+                      ओहो! कॉफीला उशीर झाला म्हणून महिलेने मॅकडोनाल्ड्समध्ये
+                      घातला गोंधळ; VIDEO पाहून पोट धरून हसाल!
+                    </p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/Nagin_Dance.png?resize=310,174"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <h5 class="py-3" style="font-weight: bold">अर्थसत्ता</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/gold-big-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p>
+                Gold-Silver: नवरात्रीच्या चौथ्या दिवशीही दर कमीच; जाणून घ्या
+                आजचा भाव
+              </p>
+
+              <div class="jitu">
+                <div
+                  class="row actor_2 adjust pt-4"
+                  style="
+                    border-bottom: 1px dotted grey;
+                    border-top: 1px dotted grey;
+                  "
+                >
+                  <div class="col-sm-8 py-4">
+                    <p>करोना-अर्थप्रोत्साहक उपायांना कात्री</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/arthbhaan-1.jpg?resize=310,174"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="row actor_2 pt-4 adjust">
+                  <div class="col-sm-8">
+                    <p>
+                      मासिक ‘एसआयपी’ ओघ सप्टेंबरमध्ये विक्रमी १०,३५१ कोटींवर
+                    </p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img
+                      src="https://www.loksatta.com/wp-content/uploads/2022/02/share-market.jpg?resize=310,174"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+    <!-- ###################################3 अग्रलेख, अन्वयार्थ, व्यक्तिवेध, विशेष ######################################33 -->
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 life_style">
+          <div class="row">
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">अग्रलेख</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/Untitled-11-4.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">निसरडी वाट</p>
+              <p class="paragraph">घोषणांची वीज, धोरणांचा प्रवाह!</p>
+              <p>नामांतर हेच उत्तर!</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">अन्वयार्थ</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2021/09/bank-1-1-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">वेचक हत्यांचा मथितार्थ</p>
+              <p class="paragraph">आघाडीसाठी धडा</p>
+              <p>फेसबुकच्या गडद अंतरंगात…</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">व्यक्तिवेध</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/sp-5-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">अब्दुलरझाक गुर्ना</p>
+              <p class="paragraph">सी. जे. येसुदास</p>
+              <p>डॉ. रुक्मिणी बॅनर्जी</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">विशेष</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/chavdi.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">शापाकडून उ:शापाकडे</p>
+              <p class="paragraph">शेतकऱ्यांसाठी आश्वासक अश्वगंधा</p>
+              <p>फूलशेती चा बहर!</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- #########################################3 2nd line #################################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 life_style">
+          <div class="row">
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">लोकरंग</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/lr01.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">हुश्श!</p>
+              <p class="paragraph">रफ स्केचेस् : प्रोसेस process</p>
+              <p>अरतें ना परतें..: आदिमायेच्या नावानं..</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">चतुरंग</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/ch01-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">स्त्रीवादाची धगधगती मशाल</p>
+              <p class="paragraph">पंचायतराज स्त्री नेतृत्वाचा ‘यू टर्न’</p>
+              <p>ज्येष्ठांचे लिव्ह इन : उत्तरायण समृद्ध करणारा ‘अनुबंध’!</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">व्हिवा</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/viva02.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">बॅक टु रॅम्प!/p></p>
+              <p class="paragraph">वस्त्रान्वेषी : पिवळाख्यान</p>
+              <p>नवं दशक नव्या दिशा : अथांगाचा थांग – २</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">करिअर वृत्तान्त</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/career-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">
+                राज्य आरोग्य हमी सोसायटी मुंबई येथे नोकरीची संधी; पगार ८०,०००
+                हजार रुपये
+              </p>
+              <p class="paragraph">
+                NDA Recruitment 2021: महिलांच्या प्रवेशासाठी शारीरिक
+                फिटनेससबंधित निकष लवकरच जाहीर होणार!
+              </p>
+              <p>
+                यूपीएससीची तयारी : सामाजिक मानसशास्त्र वृत्ती अथवा दृष्टिकोन
+              </p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- #########################################3 3rd line #################################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 life_style">
+          <div class="row">
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">अर्थवृत्तान्त</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/art-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">रपेट बाजाराची : पुन्हा शिखर चढाई</p>
+              <p class="paragraph">पंचायतराज स्त्री नेतृत्वाचा ‘यू टर्न’</p>
+              <p>विमा.. सहज, सुलभ : समूह विम्याच्या विविध योजना</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">चतुरंग</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/vr-1.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">रपेट बाजाराची : पुन्हा शिखर चढाई</p>
+              <p class="paragraph">पंचायतराज स्त्री नेतृत्वाचा ‘यू टर्न’</p>
+              <p>विमा.. सहज, सुलभ : समूह विम्याच्या विविध योजना</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">बालमैफल</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/7-5.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">उंदीर, बेडूक आणि घार</p>
+              <p class="paragraph">नवे मित्र</p>
+              <p>बाप्पा ‘ऑनलाइन’</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">हास्यतरंग</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2021/10/new-Joke-08.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">हास्यतरंग : रात्री उशिरा घरी…</p>
+              <p class="paragraph">हास्यतरंग : तुला शॉपिंगला…</p>
+              <p>हास्यतरंग : माझी स्किन…</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- #########################################3 4th line #################################################3 -->
+
+    <section class="mt-4 container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 life_style">
+          <div class="row">
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">अद्वयबोध</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2021/12/advayabodh.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">पाईक</p>
+              <p class="paragraph">अर्चनभक्ती</p>
+              <p>जुंझार ते एक विष्णुदास जगीं। पापपुण्य अंगीं नातळे त्या…</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">नवनीत</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/01/vinoba01.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">कुतूहल : गणित ऑलिम्पियाडचा उत्सव</p>
+              <p class="paragraph">नवदेशांचा उदयास्त : सध्याचा अझरबैजान</p>
+              <p>नवदेशांचा उदयास्त : सोव्हिएत युनियनमधील अझरबैजान</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">विशेष लेख</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/sp-2-3.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">विदाव्यवधान : महागद्दार की महानायक?</p>
+              <p class="paragraph">निसर्गाधारित पुनर्बांधणीसाठी हाक</p>
+              <p>पाटी फुटलीच; सरकारही उदासीन!</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+
+            <div class="col-sm-3 life" style="border-right: 1px dotted gray">
+              <h5 class="py-3" style="font-weight: bold">लोकप्रभा</h5>
+              <img
+                src="https://www.loksatta.com/wp-content/uploads/2022/02/lata-mangeshkar-10.jpg?resize=310,174"
+                alt=""
+              />
+              <p class="paragraph">असामाजिक!</p>
+              <p class="paragraph">अमली पदार्थाच्या विळख्यात…</p>
+              <p>मलाना! चरस गांजाची शेती करणारे</p>
+
+              <div class="button1 mt-4">
+                <button>आणखी वाचा<span>&#129106;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </section>
+
+    <!-- ###################################### footer styling ################################################ -->
+
+    <footer
+      class="container-fluid"
+      style="background-color: #000; color: white; margin-top: 50px"
+    >
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 footer_heading">
+          <h5 class="pt-4">TOP CATEGORIES</h5>
+          <hr />
+          <div class="text-center pt-1">
+            <ul
+              class="list-unstyled foot"
+              style="
+                justify-content: space-evenly;
+                font-weight: lighter;
+                cursor: pointer;
+                font-size: small;
+              "
+            >
+              <li>महाराष्ट्र</li>
+              <li>शहर</li>
+              <li>देश-विदेश</li>
+              <li>मनोरंजन</li>
+              <li>क्रीडा</li>
+              <li>संपादकीय</li>
+              <li>राशीभविष्य</li>
+              <li>लाइफस्टाइल</li>
+              <li>ट्रेंडिंग</li>
+              <li>लेख</li>
+              <li>फोटो</li>
+              <li>व्हिडिओ</li>
+              <li>FYI</li>
+              <li>समजून घ्या</li>
+              <li>अन्य</li>
+              <li>ब्लॉग्स</li>
+            </ul>
+            <!-- <img src="img/7787858289905226001.jfif" alt="" /> -->
+          </div>
+
+          <h5 class="pt-4">TRENDING TOPICS</h5>
+          <hr />
+          <div class="row d-flex footer_list">
+            <div class="col-sm-2">
+              <span>उत्तर प्रदेश विधानसभा निवडणूक २०२२</span>
+            </div>
+            <div class="col-sm-2">
+              <span> विधानसभा निवडणूक २०२२s</span>
+            </div>
+            <div class="col-sm-2"><span>Coronavirus News</span></div>
+            <div class="col-sm-2"><span> IPL Auction 2022</span></div>
+            <div class="col-sm-2"><span>Goa Election 2022</span></div>
+            <div class="col-sm-2"><span> Sanjay Raut</span></div>
+          </div>
+
+          <div class="row d-flex footer_list">
+            <div class="col-sm-2 mt-4"><span>Bappi Lahiri Death</span></div>
+            <div class="col-sm-2 mt-4"><span> Nitesh Rane</span></div>
+            <div class="col-sm-2 mt-4"><span> Budget 2022</span></div>
+            <div class="col-sm-2 mt-4"><span> Hijab Row</span></div>
+            <div class="col-sm-2 mt-4"><span> विधानसभा निवडणूक २०२२</span></div>
+            <div class="col-sm-2 mt-4"><span> Uttarakhand Election</span></div>
+          </div>
+          <hr />
+          <h5 class="pt-4">TRENDING STORIES</h5>
+          <hr />
+          <div class="row d-flex footer_list">
+            <div class="col-sm-2">
+              <span>पिंपरी-चिंचवडमध्ये जागोजागी वाहतूक समस्या</span>
+            </div>
+            <div class="col-sm-2">
+              <span> विधानसभा निवडणूक २०२२s</span>
+            </div>
+            <div class="col-sm-2">
+              <span>अग्रलेख : पहिले ते अर्थकारण..</span>
+            </div>
+            <div class="col-sm-2">
+              <span>
+                भारत-वेस्ट इंडिज ट्वेन्टी-२० मालिका: विश्वचषकासाठी संघबांधणीला
+                प्रारंभ!; आज पहिल्या ट्वेन्टी-२० सामन्यात भारताच्या युवा
+                खेळाडूंना छाप पाडण्याची संधी</span
+              >
+            </div>
+            <div class="col-sm-2">
+              <span
+                >लसीकरणाऐवजी टेनिस स्पर्धामधून माघार घेईन!; नोव्हाक जोकोव्हि
+                मतावर ठाम
+              </span>
+            </div>
+            <div class="col-sm-2">
+              <span>
+                Viral Video: असा नागिन डान्स तुम्ही आयुष्यात पाहिला नसेल, पोट
+                धरुन हसाल</span
+              >
+            </div>
+          </div>
+
+          <div class="row d-flex footer_list">
+            <div class="col-sm-2 mt-4">
+              <span
+                >Bappi Lahiri : प्रसिद्ध गायक, संगीतकार बप्पी लहरी यांचं
+                निधन</span
+              >
+            </div>
+            <div class="col-sm-2 mt-4">
+              <span>
+                IPL Auction: “…तर शाहीन आफ्रिदीला २०० कोटी मिळाले असते”; भारतीय
+                म्हणाले, “एवढ्यात पूर्ण पाकिस्तान येईल”</span
+              >
+            </div>
+            <div class="col-sm-2 mt-4">
+              <span>
+                पंतप्रधान मोदी आज दिल्लीतील प्रसिद्ध मंदिरात दर्शनासाठी जाणार;
+                अचानक Tweet करुन दिली माहिती2</span
+              >
+            </div>
+            <div class="col-sm-2 mt-4">
+              <span>
+                Bappi Lahiri Dies: बप्पी लहरी एवढं सोनं अंगावर का घालायचे?;
+                खुलासा करताना म्हणाले होते, “माझा आवडता…”</span
+              >
+            </div>
+            <div class="col-sm-2 mt-4">
+              <span> आजचं राशीभविष्य, बुधवार, १६ फेब्रुवारी २०२२</span>
+            </div>
+            <div class="col-sm-2 mt-4">
+              <span> आजचं राशीभविष्य, बुधवार, १६ फेब्रुवारी २०२२</span>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <div class="col-sm-3 follow_us">
+              <h5>FOLLOW US</h5>
+              <span><i class="fab fa-facebook"></i></span>
+              <span><i class="fab fa-twitter-square"></i></span>
+              <h5>DOWNLOAD APPS</h5>
+              <span><i class="fab fa-android"></i></span>
+              <span><i class="fab fa-apple"></i></span>
+            </div>
+
+            <div class="col-sm-6">
+              <h5>EXPRESS GROUP</h5>
+              <div class="row">
+                <div class="col-sm-6 express">
+                  <ul class="list-unstyled">
+                    <li>The Indian Express</li>
+                    <li>The Financial Express</li>
+                    <li>Jansatta</li>
+                    <li>IeTamil.Com</li>
+                    <li>IeMalayalam.Com</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 express">
+                  <ul class="list-unstyled">
+                    <li>IeBangla.Com</li>
+                    <li>InUth</li>
+                    <li>The ExpressGroup</li>
+                    <li>MyInsuranceClub</li>
+                    <li>Ramnath Goenka Awards</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 queck_link">
+              <h5>QUICK LINKS</h5>
+              <div class="">
+                <ul class="list-unstyled">
+                  <li>Indian Express Group</li>
+                  <li>Advertise With Us</li>
+                  <li>Privacy Policy</li>
+                  <li>संपर्क</li>
+                  <li>This Website Follows The DNPA’s Code Of Conduct</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row pb-4">
+            <div
+              class="col-sm-9"
+              style="color: #7e828e; font-size: 0.7rem; font-weight: 500"
+            >
+              Copyright © 2021 The Indian Express [P] ltd. All Rights Reserved.
+            </div>
+            <div class="col-sm-3">
+              <img
+                style="width: 187px; height: 26px"
+                src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/vip-powered-logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
+    <script src="/bootstrap-demo/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            loop: false,
+          },
+        },
+      });
+    </script>
+    <script>
+      document.getElementById("dateText").textContent =
+        new Date().toLocaleDateString();
+
+      document.querySelector(".footer-text").textContent =
+        "All rights reserved @ " + new Date().getFullYear();
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>

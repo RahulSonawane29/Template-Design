@@ -1,0 +1,263 @@
+.li {
+  padding-right: 20px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+header .list ul .li {
+  padding-top: 70px;
+}
+
+header .list ul .ship {
+  color: #6a19a6;
+  font-weight: 600;
+  background: url(img/speed-lgo.webp) no-repeat right bottom 5px;
+}
+
+.btn-group button {
+  color: #6a19a6;
+  font-size: 13px;
+}
+
+.dropdown-menu .drop {
+  color: #6a19a6;
+  font-size: 14px;
+}
+
+.dropdown-menu .hr {
+  color: #6a19a6;
+}
+
+.dropdown-menu table tbody td {
+  font-size: 14px;
+  text-align: center;
+}
+
+.enquiry {
+  color: #6a19a6;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 0;
+}
+
+.Contact {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  padding: 6px 0;
+  font-weight: 400;
+}
+
+.search {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.search input {
+  border: none;
+}
+
+.search i {
+  color: rgb(175, 172, 172);
+}
+
+.store {
+  background: url(img/png-storeloc-icon.webp) no-repeat left 0;
+  width: 34 px;
+  height: 35 px;
+  float: left;
+  margin: 8px 8px 0 0;
+  padding: 0;
+}
+
+.store a {
+  display: block;
+  font-size: 0;
+  width: 34px;
+  height: 35px;
+}
+
+.heart {
+  position: relative;
+  float: left;
+  background: url(img/sprite.webp) no-repeat -1px 13px;
+  font-size: 12px;
+}
+
+.heart a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0;
+}
+
+.search {
+  width: 213px;
+}
+
+.new-icon {
+  font-size: 34px;
+  color: grey;
+}
+
+.new-icon i:hover {
+  color: red;
+}
+
+.trolly img {
+  width: 34px;
+  height: 35px;
+}
+
+/* ###################################3 owl-carousel style #################################################3 */
+
+.owl-theme p {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+}
+
+.owl-theme div .inr {
+  color: #5c2e8c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* #############################3 TIMELESS TRENDS, SAY IT WITH A DIAMOND! #######################  */
+
+.diamond h5 {
+  color: #891328;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.diamond h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #891328;
+}
+
+.diamond .img {
+  border-right: 1px solid grey;
+}
+
+/* ########################################### testimonial style ####################################### */
+
+.carousel-item .img-j {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  width: 200px;
+  height: auto;
+  margin-top: 4px;
+}
+
+.card-body p {
+  font-size: 16px;
+  float: left;
+  color: #666;
+  font-family: barlow, sans-serif !important;
+  font-weight: 300;
+}
+
+.card-body i {
+  color: #000;
+  font-weight: 600;
+}
+
+/* <!-- ***************************************** SHOP BY PRICE styling ******************************************8 --> */
+
+.btn-under button {
+  border: none;
+  width: 250px;
+  height: 77px;
+  margin-right: 20px;
+  background: #f3f0f5;
+  font-weight: 600;
+  box-shadow: -4px 4px 0 0 #dad0e5;
+}
+
+.btn-under button h5 {
+  text-decoration: none;
+  color: #5c2e8c;
+  display: block;
+  padding: 22 px 0;
+  font-size: 24px;
+}
+
+/* <!-- ##########################################3  BLOG styling ########################################3 --> */
+
+.blog-img img {
+  width: 642px;
+}
+
+.blog-img h4 {
+  color: rgb(58, 56, 56);
+  padding-top: 15px;
+}
+
+.btn-more {
+  color: #fff;
+  background: #5c2e8c;
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.btn-now {
+  color: #fff;
+  background: #8e12d5;
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 25px;
+  width: 225px;
+  cursor: pointer;
+}
+
+/* <!-- ################################ GET IN TOUCH WITH US #############################################3 --> */
+
+.mail a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.mail {
+  width: 400px;
+  height: 100px;
+  box-shadow: 1px 1px 10px 0 #ccc;
+}
+
+.input input {
+  width: 30%;
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid black;
+}
+
+/* <!-- #####################################3 follow us ############################################# --> */
+
+.anchor ul li {
+  text-decoration: none;
+  color: #838383;
+  font-size: 12px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.anchor h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.media-icon i {
+  font-size: 25px;
+  color: gray;
+  padding-right: 20px;
+}
